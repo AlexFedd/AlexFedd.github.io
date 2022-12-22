@@ -1,0 +1,99 @@
+@media (min-width: 1080px) {
+    h1{
+        font-size: 48px;
+        line-height: 79px;
+    }
+
+    .nav-bar-container{
+        flex-direction: row;
+        width: 56.25%;
+        margin: 0px auto;
+        max-width: 1080px;
+    }
+
+    .nav-bar-container li{
+        margin-left: 42px;
+    }
+
+    .header-intro-container{
+        flex-direction: row;
+        margin: 0 auto;
+        width: 56.25%;
+        max-width: 1080px;
+    }
+
+    .header-intro img{
+        display: block;
+        max-width: 345px;
+        width: 32%;
+    }
+
+    .header-info{
+        width: 50%;
+        margin-left: 131px;
+    }
+
+    .aboutme{
+        width: 56.25%;
+        margin: 0 auto;
+    }
+
+    .aboutme p{
+        max-width: 540px;
+    }
+
+    .main-species{
+        flex-direction: row;
+        width: 56.25%;
+        max-width: 1080px;
+    }
+
+    .main-feedback{
+        width: 47.25%;
+        max-width: 1080px;
+    }
+
+    .feedback input{
+        width: 50%;
+    }
+
+    .feedback textarea{
+        width: 100%;
+    }
+
+    .footer-info{
+        width: 56.25%;
+        max-width: 1080px;
+    }
+
+    .personal-data{
+        display: flex;
+        gap: 30px;
+    }
+}
+
+@media (min-width: 720px) and (max-width: 1079px){
+    .nav-bar-container{
+        width: 80%;
+        margin: 0px auto;
+        max-width: 1080px;
+    }
+
+    .nav-bar-container li{
+        margin: 0px 21px;
+    }
+
+    .header-intro-container{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .aboutme{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .main-feedback{
+        width: 80%;
+    }
+}
