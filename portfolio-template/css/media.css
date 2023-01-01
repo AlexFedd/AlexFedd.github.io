@@ -38,14 +38,11 @@
         color: #090909 !important;
     }
     .nav-btn{
-        position: absolute;
+        position: fixed;
         width: 40px;
         z-index: 9;
         top: 46px;
         right: 30px;
-    }
-    .navigation.open .nav-btn{
-        position: fixed !important;
     }
 
     .header-info{
