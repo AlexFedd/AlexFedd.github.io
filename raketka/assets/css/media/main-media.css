@@ -1,0 +1,369 @@
+@media (max-width: 1363px) {
+  .container {
+    max-width: 768px;
+    padding: 0;
+  }
+  .upper-header .container .nav-bar,
+  footer .container .nav-bar {
+    gap: 27px;
+  }
+  header {
+    padding: 40px 0 57px;
+    gap: 40px;
+  }
+  header .header-main-content .container {
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 50px;
+  }
+  header .header-main-content .container .bg-coin {
+    display: none;
+  }
+  header .header-main-content .container .bg-money {
+    top: unset;
+    bottom: 0;
+    left: unset;
+    right: 150px;
+  }
+  header .header-main-content .container .bg-robot {
+    bottom: 450px;
+    left: 70px;
+  }
+  header .header-main-content .container .header-content {
+    align-items: center;
+    gap: 38px;
+  }
+  header .header-main-content .container .header-content .header-text .main-text,
+  header .header-main-content .container .header-content .header-text .add-text {
+    text-align: center;
+  }
+  header .header-main-content .container .header-img {
+    top: 0;
+    width: 479.158px;
+    height: 411.203px;
+  }
+  main .my-earnings {
+    padding: 88px 80px 0;
+  }
+  main .my-earnings .container .earnings-steps {
+    flex-direction: column;
+    align-items: center;
+    gap: 70px;
+  }
+  main .my-earnings .container .earnings-steps .step {
+    align-items: center;
+  }
+  main .my-earnings .container .earnings-steps .step h3 {
+    text-align: center;
+  }
+  main .my-earnings .container .earnings-steps .step p {
+    text-align: center;
+  }
+  main .my-earnings .container .earnings-steps .step:nth-of-type(1)::after {
+    transform: rotate(0deg);
+    top: 250px;
+    left: -80px;
+  }
+  main .my-earnings .container .earnings-steps .step:nth-of-type(2)::after {
+    transform: rotate(180deg);
+    top: 200px;
+    left: 250px;
+  }
+  main .my-earnings .container .earnings-card {
+    width: 768px;
+  }
+  main .my-earnings .container .earnings-card .earnings-card-stats {
+    gap: unset;
+    justify-content: space-between;
+    padding: 0 20px 54px;
+  }
+  main .my-earnings .container .earnings-card .earnings-card-stats .earnings-card-stat {
+    width: 314px;
+  }
+  main .my-earnings .container .earnings-card .earnings-card-stats .earnings-card-stat h3 {
+    text-align: center;
+  }
+  main .about-me .container {
+    padding: 178px 0px 112px;
+  }
+  main .about-me .container .about-me-content {
+    flex-direction: column-reverse;
+    gap: 80px;
+  }
+  main .result .container {
+    padding: 85px 80px 554px;
+  }
+  main .result .container .result-cards {
+    flex-direction: column;
+  }
+  main .another-stat .container {
+    padding: 307px 0px 70px;
+  }
+  main .educ-cost .container {
+    padding: 60px 0px 52px;
+    flex-direction: column-reverse;
+  }
+  main .educ-cost .coin-down {
+    display: none;
+  }
+  main .cases .cases-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  main .reviews .container {
+    padding: 15px 0px 95px;
+  }
+  main .reviews .container p {
+    margin-top: 0;
+    text-align: justify;
+  }
+  main .reviews .container p:nth-child(3) {
+    margin-top: 30px;
+    text-align: center;
+  }
+  main .reviews .container .reviews-cards .review-card {
+    align-items: center;
+  }
+  main .contacts .bg-dots-1,
+  main .contacts .bg-dots-2 {
+    display: none;
+  }
+  main .contacts .container {
+    padding: 135px 0px 94px;
+    flex-direction: column;
+    gap: 110px;
+  }
+  main .own-team .container {
+    padding: 75px 80px 94px;
+  }
+  footer .container {
+    padding: 75px 0px 66px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 360px;
+  }
+  .upper-header .container,
+  footer .container {
+    justify-content: center;
+  }
+  .upper-header .container .nav-bar,
+  footer .container .nav-bar {
+    display: none;
+  }
+  .push-up {
+    width: 250px;
+  }
+  .push-up .new-member {
+    background-color: rgba(0, 0, 0, 0.808);
+  }
+  .push-up .new-member p {
+    font-size: 12px;
+  }
+  .form-submit p {
+    font-size: 24px;
+  }
+  header .header-main-content .container .bg-money {
+    display: none;
+  }
+  header .header-main-content .container .bg-robot {
+    display: none;
+  }
+  header .header-main-content .container .header-content {
+    gap: 27px;
+  }
+  header .header-main-content .container .header-content .header-mes {
+    align-self: center;
+    left: 10px;
+  }
+  header .header-main-content .container .header-content h1 {
+    font-size: 51px;
+  }
+  header .header-main-content .container .header-content .header-text {
+    align-items: center;
+  }
+  header .header-main-content .container .header-content .header-text .main-text {
+    font-size: 24px;
+  }
+  header .header-main-content .container .header-content .header-text .add-text {
+    font-size: 16px;
+    max-width: 360px;
+  }
+  header .header-main-content .container .header-img {
+    width: 360px;
+    height: 308.944px;
+  }
+  main .my-earnings {
+    padding: 50px 0px 0;
+  }
+  main .my-earnings .container h2 {
+    font-size: 36px;
+    text-align: center;
+    gap: 30px;
+  }
+  main .my-earnings .container .earnings-steps {
+    gap: 20px;
+  }
+  main .my-earnings .container .earnings-steps .step:nth-of-type(1)::after {
+    left: -30px;
+  }
+  main .my-earnings .container .earnings-steps .step:nth-of-type(2)::after {
+    left: 220px;
+  }
+  main .my-earnings .container .earnings-card {
+    width: 360px;
+  }
+  main .my-earnings .container .earnings-card .earnings-card-stats {
+    flex-direction: column;
+    gap: 130px;
+  }
+  main .my-earnings .container .earnings-card .earnings-card-devize {
+    flex-direction: column-reverse;
+    padding: 38px 20px 52px 20px;
+  }
+  main .about-me .container {
+    padding: 178px 10px 112px;
+    gap: 0px;
+  }
+  main .about-me .container .about-me-content {
+    gap: 0px;
+  }
+  main .about-me .container .about-me-content .my-photo::after {
+    top: 30px;
+  }
+  main .about-me .container .about-me-content .my-photo::before {
+    bottom: 30px;
+  }
+  main .about-me .container .about-me-content .my-photo img {
+    width: 340px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  main .about-me .container .about-me-content .about-me-information .about-me-text h2 {
+    font-size: 36px;
+  }
+  main .about-me .container .about-me-fact {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  main .about-me .container .about-me-fact p {
+    text-align: center;
+  }
+  main .result .container {
+    padding: 50px 20px 744px;
+    gap: 30px;
+  }
+  main .result .container h2 {
+    font-size: 36px;
+  }
+  main .result .container .result-cards {
+    row-gap: 10px;
+  }
+  main .result .container .result-cards .result-card {
+    height: unset;
+    min-height: 186px;
+    width: 320px;
+  }
+  main .result .container .result-big-card .result-big-card-header p {
+    font-size: 16px;
+  }
+  main .result .container .result-big-card .result-big-card-content h3 {
+    font-size: 32px;
+  }
+  main .result .container .result-big-card::after {
+    display: none;
+  }
+  main .educ-cost .container {
+    gap: 50px;
+  }
+  main .educ-cost .container .educ-cost-content {
+    gap: 30px;
+  }
+  main .educ-cost .container .educ-cost-content .educ-cost-info h2 {
+    font-size: 36px;
+    text-align: center;
+  }
+  main .educ-cost .container .educ-cost-content .educ-cost-info h3 {
+    font-size: 36px;
+    text-align: center;
+  }
+  main .educ-cost .container .educ-cost-content .educ-cost-info p {
+    text-align: center;
+  }
+  main .educ-cost .container .educ-cost-content .educ-cost-btn {
+    align-self: center;
+  }
+  main .cases .container {
+    padding: 70px 0px 70px;
+  }
+  main .cases .container .cases-text h2 {
+    font-size: 36px;
+  }
+  main .cases .container .cases-text p {
+    font-size: 16px;
+  }
+  main .reviews .container .bg-alien {
+    display: none;
+  }
+  main .reviews .container h2 {
+    font-size: 36px;
+  }
+  main .reviews .container .reviews-cards {
+    margin-top: 50px;
+  }
+  main .reviews .container .review-card {
+    flex-direction: column;
+    padding: 30px 25px;
+  }
+  main .contacts .container .contacts-info {
+    padding: 0 10px;
+  }
+  main .contacts .container .contacts-info h2 {
+    font-size: 36px;
+  }
+  main .contacts .container .contacts-form form input {
+    width: 288px;
+    padding: 20px 20px;
+  }
+  main .contacts .container .contacts-form form button {
+    padding: 25px 20px;
+  }
+  main .own-team .container {
+    padding: 75px 20px 94px;
+  }
+  main .own-team .container .own-team-content {
+    max-width: 360px;
+  }
+  main .own-team .container .own-team-content h2 {
+    font-size: 36px;
+  }
+  main .own-team .container .own-team-content p,
+  main .own-team .container .own-team-content span {
+    font-size: 16px;
+  }
+  main .own-team .container .own-team-card {
+    padding: 38px 20px 38px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 30px;
+  }
+  main .own-team .container .own-team-card img {
+    position: static;
+  }
+  main .last-section .container {
+    padding: 80px 20px 80px;
+  }
+  main .last-section .container .bg-caution {
+    width: 100px;
+  }
+  main .last-section .container h2 {
+    font-size: 36px;
+  }
+  main .last-section .container p {
+    font-size: 16px;
+    margin-top: 30px;
+  }
+}/*# sourceMappingURL=main-media.css.map */
