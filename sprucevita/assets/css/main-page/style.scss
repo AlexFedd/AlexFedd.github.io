@@ -1,0 +1,52 @@
+@import "../reset/reset";
+
+@import "../fonts/fonts";
+
+* {
+    scroll-behavior: smooth;
+}
+
+html {
+    font-family: "Montserrat Alternates", sans-serif;
+}
+
+body {
+    position: relative;
+}
+
+.container {
+    max-width: 90rem;
+    margin: 0 auto;
+    padding-left: 80px;
+    padding-right: 80px
+
+}
+
+.title {
+
+}
+
+.link {
+}
+
+@import "./header";
+
+@import "./phone";
+
+@import "./navigation";
+
+@import "./main";
+
+@import "./our-bestsellers";
+
+@import "./item-card";
+
+@import "./about-us";
+
+@import "./news";
+
+@import "./contacts";
+
+@import "./feedback-form";
+
+@import "./footer";

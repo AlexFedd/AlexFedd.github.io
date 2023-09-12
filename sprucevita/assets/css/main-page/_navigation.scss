@@ -1,0 +1,21 @@
+.navigation {
+
+    &__list {
+        display: flex;
+        flex-direction: row;
+        gap: 2.5rem;
+    }
+
+    &__item {
+        font-family: Montserrat Alternates;
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.045em;
+    }
+
+    &__link {
+        color: #ADA580;
+    }
+}
