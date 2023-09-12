@@ -7,11 +7,21 @@
   </head>
   <body>
     <header class="header">
-      <img src="" alt class="header__background-line-1" />
-      <img src="" alt class="header__background-line-2" />
+      <img
+        src="./assets/img/header/header__line-1.svg"
+        alt
+        class="header__background-line-1"
+      />
+      <img
+        src="./assets/img/header/header__line-2.svg"
+        alt
+        class="header__background-line-2"
+      />
       <div class="header__container container">
         <div class="header__upper-header">
-          <img src="" alt="Content alt" class="header__logo" />
+          <div class="header__logo">
+            <img src="./assets/img/logo.svg" alt="Content alt" />
+          </div>
           <nav class="header__navigation navigation">
             <ul class="navigation__list">
               <li class="navigation__item">
@@ -31,7 +41,35 @@
               </li>
             </ul>
           </nav>
+          <div class="header__phone phone">
+            <div class="phone__image">
+              <img src="./assets/img/phone.svg" alt />
+            </div>
+            <span class="phone__phone-number">+1 408 534 56 90</span>
+          </div>
         </div>
+        <article class="header__body">
+          <div class="header__content">
+            <span class="header__subtitle">Healthy. Eco-friendly. Nature</span>
+            <h1 class="header__title">SpruceVita</h1>
+            <p class="header__text">
+              Welcome to SpruceVita, the place where you can find awesome
+              products made from spruce, a super plant that can do wonders for
+              your health and beauty. SpruceVita products are all natural and
+              eco-friendly, so you can feel good about using them. Whether you
+              need some spruce for your skin, hair, tummy or mood, we have got
+              you covered. Check out our spruce products and get ready to spruce
+              up your life with SpruceVita!
+            </p>
+            <a href="#" class="header__button">Get Healthy</a>
+          </div>
+          <div class="header__image">
+            <img
+              src="./assets/img/header/header__banner.png"
+              alt="Main banner"
+            />
+          </div>
+        </article>
       </div>
     </header>
     <main class="main">
@@ -39,12 +77,21 @@
         class="main__our-bestsellers our-bestsellers"
         aria-label="Our bestsellers section"
       >
-        <img src="" alt class="our-bestsellers__background-line" />
+        <img
+          src="./assets/img/our-bestsellers/our-bestsellers__line.svg"
+          alt
+          class="our-bestsellers__background-line"
+        />
         <div class="our-bestsellers__container container">
           <h2 class="our-bestsellers__title title">Our bestsellers</h2>
           <div class="our-bestsellers__row">
             <article class="our-bestsellers__column item-card">
-              <img src="" alt="Product photo" class="item-card__image" />
+              <div class="item-card__image">
+                <img
+                  src="./assets/img/our-bestsellers/our-bestsellers__item-1.jpg"
+                  alt="Product photo"
+                />
+              </div>
               <div class="item-card__info">
                 <h3 class="item-card__title">SpruceVita Relax</h3>
                 <p class="item-card__text">
@@ -54,13 +101,55 @@
               </div>
               <a href="#" class="item-card__button">Read more</a>
             </article>
+            <article class="our-bestsellers__column item-card">
+              <div class="item-card__image">
+                <img
+                  src="./assets/img/our-bestsellers/our-bestsellers__item-2.jpg"
+                  alt="Product photo"
+                />
+              </div>
+              <div class="item-card__info">
+                <h3 class="item-card__title">SpruceVita Glow</h3>
+                <p class="item-card__text">
+                  A nourishing and moisturizing cream made from spruce extract
+                  and organic ingredients. SpruceVita Glow helps you...
+                </p>
+              </div>
+              <a href="#" class="item-card__button">Read more</a>
+            </article>
+            <article class="our-bestsellers__column item-card">
+              <div class="item-card__image">
+                <img
+                  src="./assets/img/our-bestsellers/our-bestsellers__item-3.jpg"
+                  alt="Product photo"
+                />
+              </div>
+              <div class="item-card__info">
+                <h3 class="item-card__title">SpruceVita Boost</h3>
+                <p class="item-card__text">
+                  A delicious and energizing drink made from spruce juice and
+                  natural ingredients. SpruceVita Boost helps you...
+                </p>
+              </div>
+              <a href="#" class="item-card__button">Read more</a>
+            </article>
           </div>
-          <a href="#" class="our-bestsellers__link link">See all our products</a>
+          <a href="#" class="our-bestsellers__link link"
+            >See all our products</a
+          >
         </div>
       </section>
       <section class="main__about-us about-us" aria-label="About us section">
-        <img src="" alt class="about-us__background-spruce-1" />
-        <img src="" alt class="about-us__background-spruce-2" />
+        <img
+          src="./assets/img/about-us/about-us__spruce-bg.svg"
+          alt
+          class="about-us__background-spruce-1"
+        />
+        <img
+          src="./assets/img/about-us/about-us__spruce-bg.svg"
+          alt
+          class="about-us__background-spruce-2"
+        />
         <div class="about-us__container container">
           <h2 class="about-us__title title">What are we?</h2>
           <div class="about-us__content">
@@ -73,16 +162,31 @@
               something for you. Discover the benefits of spruce and live a
               sprucy life with SpruceVita!
             </p>
-            <div class="about-us__row">
-              <img src="" alt="Content alt" class="about-us__column" />
-              <img src="" alt="Content alt" class="about-us__column" />
-              <img src="" alt="Content alt" class="about-us__column" />
+            <div class="about-us__items">
+              <div class="about-us__image">
+                <img
+                  src="./assets/img/about-us/about-us__item-1.jpg"
+                  alt="Content alt"
+                />
+              </div>
+              <div class="about-us__image">
+                <img
+                  src="./assets/img/about-us/about-us__item-2.jpg"
+                  alt="Content alt"
+                />
+              </div>
+              <div class="about-us__image">
+                <img
+                  src="./assets/img/about-us/about-us__item-3.jpg"
+                  alt="Content alt"
+                />
+              </div>
             </div>
           </div>
         </div>
       </section>
       <section class="main__news news" aria-label="News section">
-        <img src="" alt class="news__background-line" />
+        <img src="./assets/img/news/news__line.svg" alt class="news__background-line" />
         <div class="news__container container">
           <h2 class="news__title title">Latest news</h2>
           <article class="news__content">
@@ -104,13 +208,16 @@
                 dollars for children.
               </p>
             </div>
-            <img src="" alt="Content alt" class="news__image" />
+            <div class="news__image">
+              <img src="./assets/img/news/news__photo.jpg" alt="Content alt" />
+            </div>
           </article>
           <a href="#" class="news__link link">All our recent events</a>
         </div>
       </section>
       <section class="main__contacts contacts">
-        <img src="" alt class="contacts__background-line" />
+        <img src="./assets/img/header/header__line-1.svg" alt class="contacts__background-line-1" />
+        <img src="./assets/img/header/header__line-2.svg" alt class="contacts__background-line-2" />
         <div class="contacts__container container">
           <h2 class="contacts__title title">Have any questions? Contact us!</h2>
           <form action="POST" class="contacts__feedback-form feedback-form">
@@ -171,8 +278,10 @@
         </div>
         <div class="footer__contacts">
           <div class="footer__phone phone">
-            <img src="" alt class="phone__phone-icon" />
-            <span class="phone-number__phone-number">+1 408 534 56 90</span>
+            <div class="phone__image">
+              <img src="./assets/img/phone.svg" alt />
+            </div>
+            <span class="phone__phone-number">+1 408 534 56 90</span>
           </div>
           <p class="footer__company-adress">
             1845 25th St San Francisco, CA 94107
