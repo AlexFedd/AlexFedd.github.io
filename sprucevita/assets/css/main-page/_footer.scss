@@ -1,26 +1,62 @@
 .footer {
-
+    overflow: hidden;
+    border-top: 4px solid #DCD4AE;
+    background-color: #33321E;
     &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 30px;
+        padding-bottom: 40px;
     }
 
     &__navigation {
+        .navigation__list {
+            flex-direction: column;
+            gap: 0.75rem;
+            .navigation__item {
+                font-size: 1.375rem !important;
+            }
+        }
     }
 
     &__policy-privacy {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.88rem;
+
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.06rem;
     }
 
     &__rights-information {
+        color: #DCD4AE;
+
     }
 
     &__policy-privacy-link {
+        color: #ADA580;
+        text-decoration: underline !important;
     }
 
     &__contacts {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+        max-width: 13.56rem;
     }
 
     &__phone {
     }
 
     &__company-adress {
+        color: #DCD4AE;
+        font-size: 1.25rem;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.05rem;
     }
 }

@@ -1,17 +1,37 @@
 .contacts {
-
+    background-color: #33321E;
+    overflow: hidden;
+    position: relative;
     &__background-line-1 {
+        max-width: none;
+        position: absolute;
+        top: -20px;
+        left: calc(50% - (970px / 0.9));
+        z-index: 0;
     }
 
     &__background-line-2 {
+        max-width: none;
+        position: absolute;
+        top: 150px;
+        right: calc(50% - (970px / 1));
+        z-index: 0;
     }
 
     &__container {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        padding-top: 85px;
+        padding-bottom: 95px;
     }
 
     &__title {
+        color: #DCD4AE;
     }
 
     &__feedback-form {
+        margin-top: 65px;
+        align-self: center;
     }
 }

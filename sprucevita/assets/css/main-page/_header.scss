@@ -3,12 +3,14 @@
     overflow: hidden;
     background-color: #33321E;
     &__background-line-1 {
+        max-width: none;
         position: absolute;
         top: -130px;
         left: calc(50% - 1170px / 1.25);
     }
 
     &__background-line-2 {
+        max-width: none;
         position: absolute;
         bottom: 90px;
         right: calc(50% - 1353px / 1.90);
@@ -27,10 +29,13 @@
     }
 
     &__logo {
+        width: 2.70969rem;
     }
 
     &__navigation {
-
+        @media (max-width: 68.75em) {
+            display: none;
+        }
     }
 
     &__phone {
@@ -59,6 +64,9 @@
         font-weight: 500;
         line-height: normal;
         margin-top: -0.07291em;
+        @media (max-width: 89.9375em) {
+            font-size: 5rem;
+        }
     }
 
     &__text {
@@ -88,5 +96,8 @@
         bottom: -205px;
         right: calc(50% - (843px / 0.95));
         filter: drop-shadow(28px 18px 101px #222114);
+        img {
+            width: 58.5rem;
+        }
     }
 }

@@ -8,25 +8,52 @@
 
 html {
     font-family: "Montserrat Alternates", sans-serif;
+    font-size: 16px;
 }
 
 body {
+    min-height: 100vh;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .container {
     max-width: 90rem;
     margin: 0 auto;
     padding-left: 80px;
-    padding-right: 80px
-
+    padding-right: 80px;
+    @media (max-width: 90em) {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
 }
 
 .title {
-
+    color: #33321E;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    @media (max-width: 90em) {
+        font-size: 3.5rem;
+    }
 }
 
 .link {
+    border-radius: 5px;
+    border: 3px solid #42380E;
+    background: #42380E;
+    display: inline-block;
+    color: #ADA580;
+    font-size: 1.75rem;
+    font-weight: 600;
+    line-height: 150%; /* 2.625rem */
+    padding: 0.8571em 1.28571em;
+    box-shadow: 13px 10px 30px #B7B08F;
+    @media (max-width: 90em) {
+        font-size: 1.5rem;
+    }
 }
 
 @import "./header";
