@@ -16,10 +16,14 @@
         flex-direction: column;
         padding-top: 85px;
         padding-bottom: 85px;
+        @media (max-width: 61.25em) {
+            padding-top: 75px;
+            padding-bottom: 85px;
+        }
     }
 
     &__title {
-        margin-bottom: 4.38rem;
+        margin-bottom: 1.09375em;
     }
 
     &__row {
@@ -28,10 +32,17 @@
         max-width: 75.5rem;
         gap: 60px;
         justify-content: space-between;
+        @media (max-width: 61.25em) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
     }
 
     &__column {
         flex: 1 1 33.3333%;
+        @media (max-width: 61.25em) {
+            flex: 0 1 40%;
+        }
     }
 
     &__link {

@@ -1,0 +1,57 @@
+.menu-switcher {
+    position: relative;
+    z-index: 101;
+    display: none;
+    flex-direction: column;
+    transition: gap .4s ease-in-out;
+    gap: 8px;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-tap-highlight-color: transparent;
+    &__line {
+        position: relative;
+        transition: all .4s ease-in-out;
+        width: 3.5rem;
+        -webkit-tap-highlight-color: transparent;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        &:focus {
+            outline: none !important;
+        }
+    }
+
+    &__line:nth-child(1) {
+        top: 0;
+    }
+
+    &__line:nth-child(3) {
+        bottom: 0;
+    }
+
+    &_opened &__line:nth-child(1) {
+        transform: rotate(45deg);
+        top: 15px;
+        //position: absolute;
+    }
+
+    &_opened &__line:nth-child(2) {
+        transform: rotate(-45deg);
+    }
+
+    &_opened &__line:nth-child(3) {
+        //position: absolute;
+        bottom: 15px;
+        transform: rotate(45deg);
+    }
+
+    @media (max-width: 71.25em) {
+         display: flex;
+    }
+
+
+
+}
+

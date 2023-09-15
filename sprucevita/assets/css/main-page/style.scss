@@ -6,6 +6,8 @@
     scroll-behavior: smooth;
 }
 
+
+
 html {
     font-family: "Montserrat Alternates", sans-serif;
     font-size: 16px;
@@ -23,9 +25,13 @@ body {
     margin: 0 auto;
     padding-left: 80px;
     padding-right: 80px;
-    @media (max-width: 90em) {
+    @media (max-width: 71.25em) {
         padding-left: 60px;
         padding-right: 60px;
+    }
+    @media (max-width: 61.25em) {
+        padding-left: 40px;
+        padding-right: 40px;
     }
 }
 
@@ -35,8 +41,11 @@ body {
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    @media (max-width: 90em) {
+    @media (max-width: 71.25em) {
         font-size: 3.5rem;
+    }
+    @media (max-width: 71.25em) {
+        font-size: 3rem;
     }
 }
 
@@ -51,12 +60,14 @@ body {
     line-height: 150%; /* 2.625rem */
     padding: 0.8571em 1.28571em;
     box-shadow: 13px 10px 30px #B7B08F;
-    @media (max-width: 90em) {
-        font-size: 1.5rem;
+    @media (max-width: 71.25em) {
+        font-size: 1.25rem;
     }
 }
 
 @import "./header";
+
+@import "./menu-switcher";
 
 @import "./phone";
 

@@ -18,5 +18,8 @@
         font-weight: 500;
         line-height: normal;
         letter-spacing: 0.05em;
+        @media (max-width: 61.25em) {
+                font-size: 1.115rem;
+        }
     }
 }

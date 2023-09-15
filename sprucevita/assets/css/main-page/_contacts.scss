@@ -24,14 +24,18 @@
         position: relative;
         padding-top: 85px;
         padding-bottom: 95px;
+        @media (max-width: 61.25em) {
+            padding-top: 75px;
+            padding-bottom: 85px;
+        }
     }
 
     &__title {
         color: #DCD4AE;
+        margin-bottom: 1.09375em;
     }
 
     &__feedback-form {
-        margin-top: 65px;
         align-self: center;
     }
 }
