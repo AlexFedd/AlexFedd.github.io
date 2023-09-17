@@ -31,6 +31,9 @@
             font-size: 1.25rem;
             max-width: 90%;
         }
+        @media (max-width: 35em) {
+            font-size: 1.115rem;
+        }
     }
 
     &__container {
@@ -43,6 +46,10 @@
         @media (max-width: 61.25em) {
             padding-top: 75px;
             padding-bottom: 85px;
+        }
+        @media (max-width: 35em) {
+            padding-top: 50px;
+            padding-bottom: 60px;
         }
     }
 
@@ -57,18 +64,28 @@
         gap: 65px;
         align-self: center;
         max-width: 66.375rem;
+        @media (max-width: 35em) {
+            gap: 40px;
+        }
     }
 
     &__items {
         display: flex;
         align-items: center;
+        justify-content: center;
         gap: 19px;
+        @media (max-width: 46em) {
+            flex-wrap: wrap;
+        }
     }
 
     &__image {
         img {
             width: 21rem;
             object-fit: cover;
+            @media (max-width: 46em) {
+                width: 18rem;
+            }
         }
     }
 }

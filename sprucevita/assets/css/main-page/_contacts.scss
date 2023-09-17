@@ -28,6 +28,10 @@
             padding-top: 75px;
             padding-bottom: 85px;
         }
+        @media (max-width: 35em) {
+            padding-top: 50px;
+            padding-bottom: 60px;
+        }
     }
 
     &__title {
@@ -37,5 +41,8 @@
 
     &__feedback-form {
         align-self: center;
+        @media (max-width: 35em) {
+            align-self: center;
+        }
     }
 }

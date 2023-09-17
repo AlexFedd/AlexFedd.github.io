@@ -20,6 +20,10 @@
             padding-top: 75px;
             padding-bottom: 85px;
         }
+        @media (max-width: 35em) {
+            padding-top: 50px;
+            padding-bottom: 60px;
+        }
     }
 
     &__title {
@@ -31,7 +35,7 @@
         display: flex;
         max-width: 75.5rem;
         gap: 60px;
-        justify-content: space-between;
+        justify-content: space-between; 
         @media (max-width: 61.25em) {
             flex-wrap: wrap;
             justify-content: center;
@@ -41,7 +45,8 @@
     &__column {
         flex: 1 1 33.3333%;
         @media (max-width: 61.25em) {
-            flex: 0 1 40%;
+            flex: unset;
+            width: max(20rem, 40%);
         }
     }
 

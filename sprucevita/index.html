@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/img/logo.svg" type="image/png">
     <link rel="stylesheet" href="./assets/css/main-page/style.css">
     <title>SpruceVita</title>
   </head>
@@ -69,7 +70,7 @@
             </p>
             <a href="#" class="header__button">Get Healthy</a>
           </div>
-          <div class="header__image">
+          <div class="header__image preloader" >
             <img
               src="./assets/img/header/header__banner.png"
               alt="Main banner"
@@ -92,10 +93,11 @@
           <h2 class="our-bestsellers__title title">Our bestsellers</h2>
           <div class="our-bestsellers__row">
             <article class="our-bestsellers__column item-card">
-              <div class="item-card__image">
+              <div class="item-card__image preloader">
                 <img
                   src="./assets/img/our-bestsellers/our-bestsellers__item-1.jpg"
                   alt="Product photo"
+                  loading="lazy"
                 />
               </div>
               <div class="item-card__info">
@@ -108,10 +110,11 @@
               <a href="#" class="item-card__button">Read more</a>
             </article>
             <article class="our-bestsellers__column item-card">
-              <div class="item-card__image">
+              <div class="item-card__image preloader">
                 <img
                   src="./assets/img/our-bestsellers/our-bestsellers__item-2.jpg"
                   alt="Product photo"
+                  loading="lazy"
                 />
               </div>
               <div class="item-card__info">
@@ -124,10 +127,11 @@
               <a href="#" class="item-card__button">Read more</a>
             </article>
             <article class="our-bestsellers__column item-card">
-              <div class="item-card__image">
+              <div class="item-card__image preloader">
                 <img
                   src="./assets/img/our-bestsellers/our-bestsellers__item-3.jpg"
                   alt="Product photo"
+                  loading="lazy"
                 />
               </div>
               <div class="item-card__info">
@@ -169,22 +173,25 @@
               sprucy life with SpruceVita!
             </p>
             <div class="about-us__items">
-              <div class="about-us__image">
+              <div class="about-us__image preloader">
                 <img
                   src="./assets/img/about-us/about-us__item-1.jpg"
                   alt="Content alt"
+                  loading="lazy"
                 />
               </div>
-              <div class="about-us__image">
+              <div class="about-us__image preloader">
                 <img
                   src="./assets/img/about-us/about-us__item-2.jpg"
                   alt="Content alt"
+                  loading="lazy"
                 />
               </div>
-              <div class="about-us__image">
+              <div class="about-us__image preloader">
                 <img
                   src="./assets/img/about-us/about-us__item-3.jpg"
                   alt="Content alt"
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -214,8 +221,8 @@
                 dollars for children.
               </p>
             </div>
-            <div class="news__image">
-              <img src="./assets/img/news/news__photo.jpg" alt="Content alt" />
+            <div class="news__image preloader">
+              <img src="./assets/img/news/news__photo.jpg" alt="Content alt" loading="lazy" />
             </div>
           </article>
           <a href="#" class="news__link link">All our recent events</a>
@@ -296,5 +303,6 @@
       </div>
     </footer>
     <script src="./assets/js/menu-switcher.js"></script>
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>
