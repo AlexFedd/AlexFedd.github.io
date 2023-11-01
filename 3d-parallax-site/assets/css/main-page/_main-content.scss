@@ -2,26 +2,36 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 16rem;
     gap: 30px;
     &__heading {
-        font-size: 16rem;
+        font-size: 1em;
     }
 
     &__p {
         font-family: 'merriweather-italic-3d';
         text-align: center;
-        font-size: 1.5rem;
-        max-width: 1060px;
+        font-size: 0.09375em;
+        max-width: 44.16em;
     }
 
     &__button {
         font-family: Arial;
-        font-size: 1.75rem;
+        font-size: 0.109em;
         font-weight: 600;
         padding: 20px 30px;
         border-radius: 10em;
         border: #fff 3px solid;
         outline: none;
         cursor: pointer;
+    }
+    @media (max-width: 90em) {
+        font-size: 10rem;
+    }
+    @media (max-width: 49em) {
+        font-size: 7rem;
+    }
+    @media (max-width: 35em) {
+        font-size: 4rem;
     }
 }

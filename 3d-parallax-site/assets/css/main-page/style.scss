@@ -22,7 +22,7 @@ body {
 }
 .layer-3 {
     transform: translateZ(180px) scale(.92);
-
+    pointer-events: none;
 }
 .layer-4 {
     transform: translateZ(190px) scale(.88);

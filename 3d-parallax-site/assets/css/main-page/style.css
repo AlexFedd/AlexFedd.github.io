@@ -1,7 +1,8 @@
 @import url("../reset/reset.css");
 @import url("../fonts/fonts.css");
 .logo {
-  width: 150px;
+  width: 15vh;
+  display: none;
   position: absolute;
   z-index: 9999;
   top: 5%;
@@ -11,6 +12,7 @@
 
 .layers {
   perspective: 1000px;
+  overflow: hidden;
 }
 .layers__container {
   height: 100vh;
@@ -28,26 +30,42 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-size: 16rem;
   gap: 30px;
 }
 .main-content__heading {
-  font-size: 16rem;
+  font-size: 1em;
 }
 .main-content__p {
   font-family: "merriweather-italic-3d";
   text-align: center;
-  font-size: 1.5rem;
-  max-width: 1060px;
+  font-size: 0.09375em;
+  max-width: 44.16em;
 }
 .main-content__button {
   font-family: Arial;
-  font-size: 1.75rem;
+  font-size: 0.109em;
   font-weight: 600;
   padding: 20px 30px;
   border-radius: 10em;
   border: #fff 3px solid;
   outline: none;
   cursor: pointer;
+}
+@media (max-width: 90em) {
+  .main-content {
+    font-size: 10rem;
+  }
+}
+@media (max-width: 49em) {
+  .main-content {
+    font-size: 7rem;
+  }
+}
+@media (max-width: 35em) {
+  .main-content {
+    font-size: 4rem;
+  }
 }
 
 body {
@@ -71,6 +89,7 @@ body {
 
 .layer-3 {
   transform: translateZ(180px) scale(0.92);
+  pointer-events: none;
 }
 
 .layer-4 {
