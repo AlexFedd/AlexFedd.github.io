@@ -1,0 +1,16 @@
+.layers {
+    perspective: 1000px;
+    &__container {
+        height: 100vh;
+        transform-style: preserve-3d;
+        transform: rotateX(var(--move-y)) rotateY(var(--move-x));
+    }
+
+    &__item {
+        position: absolute;
+        inset: -5vw;
+        background-size: cover;
+        background-position: center center;
+
+    }
+}

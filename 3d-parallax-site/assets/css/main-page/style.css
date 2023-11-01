@@ -1,0 +1,89 @@
+@import url("../reset/reset.css");
+@import url("../fonts/fonts.css");
+.logo {
+  width: 150px;
+  position: absolute;
+  z-index: 9999;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.layers {
+  perspective: 1000px;
+}
+.layers__container {
+  height: 100vh;
+  transform-style: preserve-3d;
+  transform: rotateX(var(--move-y)) rotateY(var(--move-x));
+}
+.layers__item {
+  position: absolute;
+  inset: -5vw;
+  background-size: cover;
+  background-position: center center;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.main-content__heading {
+  font-size: 16rem;
+}
+.main-content__p {
+  font-family: "merriweather-italic-3d";
+  text-align: center;
+  font-size: 1.5rem;
+  max-width: 1060px;
+}
+.main-content__button {
+  font-family: Arial;
+  font-size: 1.75rem;
+  font-weight: 600;
+  padding: 20px 30px;
+  border-radius: 10em;
+  border: #fff 3px solid;
+  outline: none;
+  cursor: pointer;
+}
+
+body {
+  background-color: #000;
+  color: #FFFFFF;
+  font-family: "kamerik-3d";
+  overflow: hidden;
+}
+
+.layer-1 {
+  transform: translateZ(-55px) scale(1.16);
+}
+
+.layer-2 {
+  transform: translateZ(80px) scale(0.88);
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.layer-3 {
+  transform: translateZ(180px) scale(0.92);
+}
+
+.layer-4 {
+  transform: translateZ(190px) scale(0.88);
+  pointer-events: none;
+}
+
+.layer-5 {
+  transform: translateZ(300px) scale(0.88);
+  pointer-events: none;
+}
+
+.layer-6 {
+  transform: translateZ(380px);
+  pointer-events: none;
+}
