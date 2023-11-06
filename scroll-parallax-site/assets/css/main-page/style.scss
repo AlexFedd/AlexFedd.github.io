@@ -1,0 +1,74 @@
+@import '../reset/reset.css';
+
+@import '../fonts/fonts.css';
+
+body {
+    background-color: #010101;
+    font-family: raleway, sans-serif;
+    color: #FFF;
+    //line-height: 150%;
+}
+
+.subtitle {
+    font-weight: 900;
+    font-size: 2rem;
+    @media (max-width: 26.5em) {
+        font-size: 1.5rem;
+    }
+
+}
+.title {
+    font-weight: 900;
+    font-size: 4.5rem;
+    letter-spacing: 1rem;
+    @media (max-width: 26.5em) {
+        font-size: 3rem;
+    }
+}
+.container {
+    max-width: 1440px;
+    padding: 0 80px;
+    margin: 0 auto;
+    @media (max-width: 64em) {
+        padding: 0 60px;
+    }
+    @media (max-width: 48em) {
+        padding: 0 30px;
+    }
+    @media (max-width: 20em) {
+        padding: 0 15px;
+    }
+}
+.title2 {
+    font-weight: 900;
+    font-size: 3.5rem;
+    letter-spacing: 1rem;
+    text-align: center;
+    @media (max-width: 64em) {
+        font-size: 2rem;
+    letter-spacing: 0.5rem;
+    }    
+    @media (max-width: 48em) {
+        font-size: 1.5rem;
+    }
+}
+.text {
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 150%;
+    @media (max-width: 64em) {
+        font-size: 1.25rem;
+    }
+}
+
+.wrapper__container {
+    will-change: transform;
+}
+
+@import './header';
+
+@import './banner';
+
+@import './main';
+
+@import './description-block';
