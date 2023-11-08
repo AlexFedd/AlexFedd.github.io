@@ -4,10 +4,38 @@
   align-items: center;
   padding: 30px 25px;
   border-radius: 10px;
-  background-color: #42380e;
+  background-color: #42380e7a;
   font-size: 20px;
   gap: 1em;
+  backdrop-filter: blur(2px);
+  cursor: pointer;
   box-shadow: 13px 10px 30px #b7b08f;
+  &:hover{
+    //animation: hoveringCard 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    background-color: #42380eb0;
+    transform: scale(1.2);
+    backdrop-filter: blur(5px);
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+  }
+  @keyframes hoveringCard {
+    0% {
+      background-color: #42380e7a;
+      transform: scale(1);
+      backdrop-filter: blur(2px);
+
+    }
+    50% {
+      background-color: #42380e7a;
+      transform: scale(1.2);
+    }
+    100% {
+      backdrop-filter: blur(5px);
+      background-color: #42380e87;
+      transform: scale(1.2);
+
+    }
+  }
   &__image {
     border-radius: 12px;
     overflow: hidden;
