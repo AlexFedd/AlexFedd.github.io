@@ -1,0 +1,17 @@
+.text-block {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    &__h {
+        font-size: 3rem;
+        @media (max-width: 48em) {
+            font-size: 2rem;
+        }
+    }
+
+    &__p {
+        line-height: 155%;
+        text-align: justify;
+    }
+}
+

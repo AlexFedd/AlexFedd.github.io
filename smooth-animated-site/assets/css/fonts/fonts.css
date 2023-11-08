@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Outfit';
+    font-weight: 400;
+    src: url('../../fonts/outfit-regular.woff2');
+}
+
+@font-face {
+    font-family: raleway-c;
+    src: url('../../fonts/raleway-regular.woff2');
+}

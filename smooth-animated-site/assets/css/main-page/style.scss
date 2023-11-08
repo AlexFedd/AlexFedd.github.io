@@ -1,0 +1,44 @@
+@import '../reset/reset.css';
+
+@import '../fonts/fonts.css';
+
+
+.container {
+    max-width: 90rem;
+    margin: 0 auto;
+    padding-left: 80px;
+    padding-right: 80px;
+    @media (max-width: 71.25em) {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    @media (max-width: 61.25em) {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    @media (max-width: 46em) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+body {
+    background-image: url('../../img/bg.jpg');
+    color: #fafafa;
+    font-family: 'raleway-c', sans-serif;
+    overflow-x: hidden
+}
+
+.wrapper-content,
+.header__hero,
+.gallery__left,
+.gallery__right,
+.header__title {
+    will-change: transform;
+}
+
+@import './header';
+
+@import './gallery';
+
+@import './text-block';
