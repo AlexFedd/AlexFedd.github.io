@@ -7,9 +7,8 @@ if(ScrollTrigger.isTouch !== 1) {
         smooth: 1.5,
         effects: true,
     });
-}
 
-gsap.fromTo('.header', {opacity: 1}, 
+    gsap.fromTo('.header', {opacity: 1}, 
 {
     opacity: 0,
     scrollTrigger: {
@@ -53,3 +52,5 @@ gsap.fromTo('.last-news__cards-wrapper', {x: 50},
         scrub: true,
     }
 })
+}
+
