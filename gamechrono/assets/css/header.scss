@@ -8,7 +8,6 @@
     }
     &__container {
         position: relative;
-        padding-top: 40px;
         display: flex;
         flex-direction: column;
         gap: 90px;
@@ -22,6 +21,10 @@
     }
     &__navigation {
         align-self: center;
+        padding-top: 40px;
+        @media (max-width: 767px) {
+            padding-top: 0;
+        }
         @media (max-width: 767px) {
             & > .navigation__list {
 
@@ -44,6 +47,12 @@
 
     &__body {
         width: 100%;
+        display: flex;
+        justify-content: space-between;
+        @media (max-width: 1023px) {
+            flex-direction: column-reverse;
+            gap: 70px;
+        }
     }
 
     &__content {

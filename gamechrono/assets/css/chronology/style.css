@@ -1,0 +1,65 @@
+.chronology__container {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+@media (max-width: 1439px) {
+  .chronology__container {
+    gap: 45px;
+  }
+}
+.chronology__row {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+@media (max-width: 767px) {
+  .chronology__row {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.chronology__chrono-card:nth-child(2n) {
+  margin-top: 172px;
+}
+@media (max-width: 1439px) {
+  .chronology__chrono-card:nth-child(2n) {
+    margin-top: 100px;
+  }
+}
+@media (max-width: 767px) {
+  .chronology__chrono-card:nth-child(2n) {
+    margin-top: 0;
+  }
+}
+
+.chrono-card {
+  width: 542px;
+  height: 414px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #262121;
+}
+@media (max-width: 767px) {
+  .chrono-card {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+.chrono-card__image {
+  background-color: #595959;
+  height: 100%;
+}
+.chrono-card__content {
+  width: 100%;
+  padding: 25px;
+}
+.chrono-card__title {
+  color: #FAFAFA;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.8px;
+}

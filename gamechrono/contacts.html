@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/images/static/favicon.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,regular,500,600" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Outfit:700" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/contacts/style.css">
+    <title>GameChrono</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="wrapper-content">
+            <header class="header">
+                <div class="header__container container">
+                    <nav class="header__navigation navigation">
+                        <button type="button" class="header__menu-switcher menu-switcher" >
+                            <img src="./assets/images/static/line.svg" alt class="menu-switcher__line">
+                            <img src="./assets/images/static/line.svg" alt class="menu-switcher__line">
+                            <img src="./assets/images/static/line.svg" alt class="menu-switcher__line">
+                        </button>
+                        <ul class="navigation__list">
+                            <li class="navigation__item"><a href="./index.html" class="navigation__link">Главная</a></li>
+                            <li class="navigation__item"><a href="./news.html" class="navigation__link">Новости</a></li>
+                            <li class="navigation__item"><a href="./chronology.html" class="navigation__link">Хронология</a></li>
+                            <li class="navigation__item"><a href="./contacts.html" class="navigation__link navigation__link--active">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header__body">
+                        <div class="header__heading">
+                            <h1 class="header__title title-h1">Контакты</h1>
+                            <p class="header__subtitle subtitle"><span class="red-text">нашего</span> издания</p>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main class="contacts">
+                <section class="contacts-information">
+                    <div class="contacts-information__container container">
+                        <div data-speed="0.8" style="height: 151px; width: 151px; top: 400px; right: 246px;" class="bg-deco"></div>
+                        <div data-speed="0.6" style="height: 251px; width: 151px; top: 200px; left: 246px;" class="bg-deco"></div>
+                        <section class="about-us">
+                            <h2 class="about-us__title title-h2">Немного <br> <span class="red-text">информации</span> о нас</h2>
+                            <p class="about-us__p text">Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, </p>
+                        </section>
+                        <section class="contact-data">
+                            <h2 class="contact-data__title title-h2">Контактные <br> <span class="red-text">данные</span> для связи</h2>
+                            <div class="contact-data__list">
+                                <li class="contact-data__li text">г. Город ул.Улица д. дом ст. 5 </li>
+                                <li class="contact-data__li text">example@mail.com </li>
+                                <li class="contact-data__li text">+7 (777) 777 - 77 - 77</li>
+                                <li class="contact-data__li text">+7 (777) 777 - 77 -77</li>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+                <section class="contacts-form">
+                    <div class="contacts-form__container container">
+                        <h2 class="contacts-form__title title-h2">Свяжитесь с <span class="red-text">нами</span></h2>
+                        <form action="POST" class="contacts-form__form form">
+                            <div class="form__personal-inputs">
+                                <input type="name" placeholder="Ваше имя" name="name" class="form__personal-input">
+                                <input type="email" placeholder="Ваш e-mail" name="email" class="form__personal-input">
+                            </div>
+                            <textarea name="message" placeholder="Ваше обращение" id="" class="form__message"></textarea>
+                        </form>
+                        <button class="contacts-form__button button" type="submit">отправить</button>
+                    </div>
+                </section>
+            </main>
+            <footer class="footer">
+                <div class="footer__container container">
+                    <nav class="footer__navigation navigation">
+                        <ul class="navigation__list">
+                            <li class="navigation__item"><a href="./index.html" class="navigation__link">Главная</a></li>
+                            <li class="navigation__item"><a href="./news.html" class="navigation__link">Новости</a></li>
+                            <li class="navigation__item"><a href="./chronology.html" class="navigation__link ">Хронология</a></li>
+                            <li class="navigation__item"><a href="./contacts.html" class="navigation__link navigation__link--active">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <div class="footer__rights-reserved">
+                        <p class="footer__right-reserved-text">
+                            <span class="red-text">Game</span>Chrono<br>© Все права защищены
+                        </p>
+                    </div>
+                    <div class="footer__contacts">
+                        <p class="footer__contacts-text">
+                            г. Город ул.Улица <br> д. дом ст. 5
+                        </p>
+                        <p class="footer__contacts-text">
+                            example@mail.com
+                        </p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="./assets/libs/gsap/gsap.min.js"></script>
+    <script src="./assets/libs/gsap/ScrollTrigger.min.js"></script>
+    <script src="./assets/libs/gsap/ScrollSmoother.min.js"></script>
+    <script src="./assets/js/contacts-gsap.js"></script>
+    <script src="./assets/js/menu-switcher.js"></script>
+</body>
+</html>

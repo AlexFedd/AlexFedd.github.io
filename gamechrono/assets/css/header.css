@@ -11,7 +11,6 @@
 }
 .header__container {
   position: relative;
-  padding-top: 40px;
   display: flex;
   flex-direction: column;
   gap: 90px;
@@ -24,6 +23,12 @@
 }
 .header__navigation {
   align-self: center;
+  padding-top: 40px;
+}
+@media (max-width: 767px) {
+  .header__navigation {
+    padding-top: 0;
+  }
 }
 @media (max-width: 767px) {
   .header__navigation > .navigation__list {
@@ -44,6 +49,14 @@
 }
 .header__body {
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 1023px) {
+  .header__body {
+    flex-direction: column-reverse;
+    gap: 70px;
+  }
 }
 .header__content {
   width: 40%;

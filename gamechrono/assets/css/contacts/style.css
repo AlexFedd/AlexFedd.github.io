@@ -1,0 +1,130 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+
+.contacts-information__container {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 1023px) {
+  .contacts-information__container {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+}
+
+.about-us {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+@media (max-width: 1023px) {
+  .about-us__title {
+    text-align: center;
+  }
+}
+.about-us__p {
+  max-width: 522px;
+}
+
+.contact-data {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.contact-data__title {
+  text-align: end;
+}
+@media (max-width: 1023px) {
+  .contact-data__title {
+    text-align: center;
+  }
+}
+.contact-data__list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+@media (max-width: 424px) {
+  .contact-data__list {
+    gap: 20px;
+  }
+}
+.contact-data__li {
+  list-style-type: none;
+  text-align: end;
+  max-width: 522px;
+}
+@media (max-width: 1023px) {
+  .contact-data__li {
+    text-align: center;
+  }
+}
+
+.contacts-form__container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+.form {
+  width: 100%;
+  max-width: 620px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.form__personal-inputs {
+  display: flex;
+  gap: 20px;
+}
+@media (max-width: 424px) {
+  .form__personal-inputs {
+    flex-direction: column;
+  }
+}
+.form__message {
+  background-color: #201C1C;
+  border-radius: 8px;
+  border: 2px solid #FAFAFA;
+  padding: 23px 20px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 100%; /* 20px */
+  letter-spacing: 0.4px;
+  resize: none;
+  height: 241px;
+}
+.form__message::-moz-placeholder {
+  color: #D3C7C7;
+}
+.form__message::placeholder {
+  color: #D3C7C7;
+}
+.form__personal-input {
+  background-color: #201C1C;
+  border-radius: 8px;
+  border: 2px solid #FAFAFA;
+  padding: 23px 20px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 100%; /* 20px */
+  letter-spacing: 0.4px;
+  width: 50%;
+}
+.form__personal-input::-moz-placeholder {
+  color: #D3C7C7;
+}
+.form__personal-input::placeholder {
+  color: #D3C7C7;
+}
+@media (max-width: 424px) {
+  .form__personal-input {
+    width: 100%;
+  }
+}
