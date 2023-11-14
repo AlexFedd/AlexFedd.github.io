@@ -165,6 +165,7 @@ main {
 
 .image-wrapper {
   position: relative;
+  overflow: hidden;
 }
 .image-wrapper__image {
   position: relative;

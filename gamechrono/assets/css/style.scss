@@ -130,6 +130,7 @@ main {
 } 
 .image-wrapper {
   position: relative;
+  overflow: hidden;
   &__image {
     position: relative;
     z-index: 2;

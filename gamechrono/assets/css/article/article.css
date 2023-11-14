@@ -26,5 +26,6 @@
   width: 100%;
   background-color: #595959;
   min-height: 230px;
+  height: max(230px, min(50vh, 560px));
   max-height: 560px;
 }
