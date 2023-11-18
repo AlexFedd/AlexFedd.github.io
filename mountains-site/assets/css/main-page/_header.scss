@@ -1,0 +1,92 @@
+.header {
+    position: relative;
+    background-image: url('../../image/main-page/header-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    &::after {
+        content: '';
+        position: absolute;
+        z-index: 0;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(330deg, rgba(11, 29, 38, 0.00) 31.06%, #0B1D26 108.93%);
+    }
+    overflow: hidden;
+    //height: max(900px, min(150vh, 2000px));
+    height: min(105rem, 200vh);
+    &__container {
+        padding-top: 4rem;
+        position: relative;
+        z-index: 1;
+        transition: transform .75s cubic-bezier(.075, .5, 0, 1);
+        will-change: transform;
+    }
+
+    &__upper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__body {
+        margin-top: 12.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+    &__title {
+        max-width: 59rem;
+    }
+
+    &__button {
+        color: #FFF;
+        &::after {
+            content: '';
+            position: absolute;
+            right: -2rem;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 1rem;
+            height: 1.5rem;
+            background-image: url("../../image/main-page/arr-down.svg");
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            transition: all 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
+          }
+          &:hover::after {
+            top: 80%;
+            right: -2rem;
+          }
+    }
+
+}
+
+.layer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    transition: transform .75s cubic-bezier(.075, .5, 0, 1);
+    will-change: transform;
+}
+.layer-1 {
+    transform: translate3d(0, calc(var(--scrollTop) / 3), 0);
+}
+.layer-2 {
+    pointer-events: none;
+
+    transform: translate3d(0, calc(var(--scrollTop) / 1.6), 0);
+}
+.layer-3 {
+    pointer-events: none;
+    transform: translate3d(0, calc(var(--scrollTop) / 7), 0);
+    z-index: 2;
+
+}

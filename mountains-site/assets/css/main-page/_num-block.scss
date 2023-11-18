@@ -1,0 +1,26 @@
+.num-block {
+    width: 4.8125rem;
+    display: flex;
+    flex-direction: column;
+    &__item {
+        width: 100%;
+        border-right: 3px solid #ffffffa2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 3.75rem;
+        &:nth-child(1) {
+            border-right: 3px solid #ffffff;
+        }
+    }
+
+    &__num {
+        color: #FFF;
+        text-align: right;
+        font-family: Gilroy;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+}

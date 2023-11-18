@@ -1,0 +1,17 @@
+.account-btn {
+    display: flex;
+    gap: .625rem;
+    align-items: center;
+    &__image {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    &__text {
+        font-size: 1.0625rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        color: #FFF;
+    }
+}

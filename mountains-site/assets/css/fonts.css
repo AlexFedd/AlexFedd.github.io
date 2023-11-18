@@ -1,0 +1,23 @@
+@font-face {
+    font-family: Gilroy;
+    font-weight: 500;
+    src: url('../fonts/gilroy/Gilroy-Medium.woff2');
+}
+
+@font-face {
+    font-family: Gilroy;
+    font-weight: 700;
+    src: url('../fonts/gilroy/Gilroy-Bold.woff2');
+}
+
+@font-face {
+    font-family: Gilroy;
+    font-weight: 800;
+    src: url('../fonts/gilroy/Gilroy-Extrabold.woff2');
+}
+
+@font-face {
+    font-family: 'Chronicle Display';
+    font-weight: 600;
+    src: url('../fonts/chronicle/Chronicle\ Display\ Semibold.otf');
+}
