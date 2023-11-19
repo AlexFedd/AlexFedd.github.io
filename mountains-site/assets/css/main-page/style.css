@@ -290,7 +290,7 @@ main {
 }
 @media (max-width: 1023px) {
   .header {
-    height: 130vh;
+    height: 110vh;
   }
 }
 .header__container {
