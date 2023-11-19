@@ -2,6 +2,9 @@
     width: 4.8125rem;
     display: flex;
     flex-direction: column;
+    @media (max-width: 48em) {
+        display: none;
+    }
     &__item {
         width: 100%;
         border-right: 3px solid #ffffffa2;
@@ -11,6 +14,12 @@
         height: 3.75rem;
         &:nth-child(1) {
             border-right: 3px solid #ffffff;
+        }
+        cursor: pointer;
+        @media (hover: hover) {
+            &:hover > .num-block__num {
+                transform: scale(1.2);
+            }
         }
     }
 
@@ -22,5 +31,6 @@
         font-style: normal;
         font-weight: 700;
         line-height: normal;
+        transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
     }
 }

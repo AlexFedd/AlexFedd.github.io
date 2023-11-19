@@ -1,7 +1,9 @@
 @import "../reset.css";
 
 @import "../fonts.css";
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   color: #fff;
   font-family: Gilroy;
@@ -14,6 +16,29 @@ body {
 
 main {
   flex: 1 0 auto;
+}
+.page-loader {
+  position: fixed;
+  z-index: 24235;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #0b1d26;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__span {
+    font-family: Chronicle Display;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.32px;
+    text-transform: capitalize;
+    //color: #fbd784;
+
+  }
 }
 
 .logo {
@@ -54,6 +79,9 @@ main {
   flex-direction: column;
   gap: 1.5rem;
   align-items: center;
+  @media (max-width: 48em) {
+    flex-direction: row;
+  }
   &__text {
 
     font-size: 1.125rem;
@@ -97,6 +125,19 @@ main {
   font-weight: 600;
   line-height: 113.636%; /*  */
   text-transform: capitalize;
+
+  @media (max-width: 90em) {
+    font-size: 4.5rem;
+  }
+  @media (max-width: 64em) {
+    font-size: 3rem;
+  }
+  @media (max-width: 48em) {
+    font-size: 2.5rem;
+  }
+  @media (max-width: 27em) {
+    font-size: 2rem;
+  }
 }
 .button {
   position: relative;
@@ -122,16 +163,25 @@ main {
   &:hover::after {
     right: -3rem;
   }
+  transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+        
+  @media (hover: hover) {
+      &:hover {
+          transform: scale(1.2);
+      }
+  }
 }
 
 .main {
   position: relative;
   z-index: 2;
+  top: -15.875rem;
   &__gradient {
+    pointer-events: none;
     position: absolute;
     z-index: 3;
     top: 0;
-    transform: translateY(-80%);
+    transform: translateY(-40%);
     left: 0;
     right: 0;
     width: 100%;
@@ -142,7 +192,7 @@ main {
   &__blocks {
     position: relative;
     z-index: 4;
-    top: -15.875rem;
+
   }
 }
 
@@ -152,12 +202,27 @@ main {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  @media (max-width: 90em) {
+    font-size: 3rem;
+  }
+  @media (max-width: 64em) {
+    font-size: 2.5rem;
+  }
+  @media (max-width: 48em) {
+    font-size: 2rem;
+  }
+  @media (max-width: 27em) {
+    font-size: 1.5rem;
+  }
 }
 .text {
   font-size: 1.125rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 2rem; /* 177.778% */
+  line-height: 177.778%; /* 177.778% */
+  @media (max-width: 27em) {
+    font-size: 1rem;
+  }
 }
 
 .container {
@@ -181,7 +246,16 @@ main {
 
 
 @import './header';
+
 @import './navigation';
+
 @import './account-btn';
+
 @import './num-block';
+
 @import './blocks';
+
+@import './navigation-mini';
+
+@import './footer';
+

@@ -2,6 +2,13 @@
     display: flex;
     gap: .625rem;
     align-items: center;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+        
+    @media (hover: hover) {
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
     &__image {
         width: 1.5rem;
         height: 1.5rem;

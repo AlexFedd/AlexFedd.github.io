@@ -4,9 +4,35 @@
     display: flex;
     gap: 2.5rem;
     align-items: center;
+    @media (max-width: 48em) {
+        & {
+            transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+            padding-top: 60px;
+            position: fixed;
+            flex-direction: column;
+            gap: 40px;
+            left: 0;
+            right: 0;
+            z-index: 999 !important;
+            background-color: #262121;
+            height: 300px;
+            top: -300px;
+            bottom: -200px;
+            &--opened{
+                top: 0;
+            }
+        }
     }
-
+    }
+    
     &__item {
+        transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+        
+        @media (hover: hover) {
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
     }
 
     &__link {
@@ -16,5 +42,12 @@
         font-style: normal;
         font-weight: 700;
         line-height: normal;
+        transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+        
+        @media (hover: hover) {
+            &:hover {
+                color: #FBD784;
+            }
+        }
     }
 }

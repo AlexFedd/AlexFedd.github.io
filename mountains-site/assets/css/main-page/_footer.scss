@@ -1,28 +1,65 @@
 .footer {
-
+    padding-bottom: 120px;
     &__container {
+        display: flex;
+        justify-content: space-between;
+        @media (max-width: 48em) {
+            flex-direction: column;
+            align-items: center;
+            gap: 4rem;
+        }
     }
 
     &__mntn-info {
     }
 
     &__navs {
+        display: flex;
+        gap: 13.25rem;
+        @media (max-width: 64em) {
+            gap: 5rem;
+        }
     }
 
     &__navigation {
     }
 }
 .mntn-info {
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 280px;
+    @media (max-width: 48em) {
+        text-align: center;
+        height: fit-content;
+    }
     &__info {
+        display: flex;
+        flex-direction: column;
+        flex: 1 0 auto;
+        gap: 1.5rem;
+        align-items: center;
     }
 
     &__text {
+        max-width: 18.9375rem;
     }
 
     &__copyrights {
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 2rem; /* 177.778% */
+        opacity: 0.5;
     }
 
     &__title {
+        font-family: Chronicle Display;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.32px;
+        text-transform: capitalize;
     }
 }

@@ -1,14 +1,47 @@
 .navigation-mini {
 
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
     &__title {
+        font-family: Gilroy;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px; /* 133.333% */
+        color: #FBD784;
     }
 
     &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
     }
 
     &__item {
+        transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+        position: relative;
+        left: 0;
+        @media (hover: hover) {
+            &:hover {
+                left: 0.45rem;
+            }
+        }
     }
 
     &__link {
+        color: #FFF;
+        font-family: Gilroy;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 32px; /* 177.778% */
+        transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+        
+        @media (hover: hover) {
+            &:hover {
+                color: #FBD784;
+            }
+        }
     }
 }

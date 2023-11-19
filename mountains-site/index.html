@@ -3,10 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/main-page/style.css">
+    <link rel="stylesheet" href="./assets/css/main-page/style.css" />
     <title>Mountain climbing</title>
   </head>
-  <body>
+  <body style="overflow: hidden;">
+    <div class="page-loader">
+      <span class="page-loader__span">Loading...</span>
+    </div>
     <div class="wrapper">
       <div class="wrapper__container">
         <header class="header">
@@ -14,6 +17,11 @@
             <div class="header__upper">
               <span class="header__logo logo">MNTN</span>
               <nav class="header__navigation navigation">
+                <button type="button" class="header__menu-switcher menu-switcher" >
+                  <img src="./assets/image/line.svg" alt class="menu-switcher__line">
+                  <img src="./assets/image/line.svg" alt class="menu-switcher__line">
+                  <img src="./assets/image/line.svg" alt class="menu-switcher__line">
+              </button>
                 <ul class="navigation__list">
                   <li class="navigation__item">
                     <a href="#" class="navigation__link">Equipment</a>
@@ -28,7 +36,11 @@
               </nav>
               <a href="#" class="header__account-btn account-btn">
                 <div class="account-btn__image image-wrapper">
-                  <img data-src="" src="./assets/image/main-page/cart.svg" alt="Account" class="image-wrapper__img" />
+                  <img
+                    src="./assets/image/main-page/cart.svg"
+                    alt="Account"
+                    class="image-wrapper__img"
+                  />
                 </div>
                 <span class="account-btn__text">Account</span>
               </a>
@@ -36,13 +48,21 @@
             <div class="header__body">
               <div class="header__soc-media soc-media">
                 <span class="soc-media__text">Follow Us</span>
-                <img src="./assets/image/main-page/twitter.svg" alt="Twitter" class="soc-media__logo" />
-                <img src="./assets/image/main-page/instagram.svg" alt="Instagram" class="soc-media__logo" />
+                <img
+                  src="./assets/image/main-page/twitter.svg"
+                  alt="Twitter"
+                  class="soc-media__logo"
+                />
+                <img
+                  src="./assets/image/main-page/instagram.svg"
+                  alt="Instagram"
+                  class="soc-media__logo"
+                />
               </div>
               <div class="header__content">
                 <span class="header__subtitle subtitle">A Hiking guide</span>
                 <h1 class="header__title title-h1">
-                  Be prepared for the Mountains and beyond!
+                  Be prepared for the <br> Mountains and beyond!
                 </h1>
                 <a href="#main" type="button" class="header__button button">
                   scroll down
@@ -53,95 +73,191 @@
                   <span class="num-block__num">Start</span>
                 </div>
                 <div class="num-block__item">
-                  <span class="num-block__num">01</span>
+                  <span class="num-block__num 01">01</span>
                 </div>
                 <div class="num-block__item">
-                  <span class="num-block__num">02</span>
+                  <span class="num-block__num 02">02</span>
                 </div>
                 <div class="num-block__item">
-                  <span class="num-block__num">03</span>
+                  <span class="num-block__num 03">03</span>
                 </div>
               </div>
             </div>
           </div>
-          <img src="./assets/image/main-page/medium-ground.png" alt="" class="layer layer-2" />
-          <img src="./assets/image/main-page/front-ground.png" alt="" class="layer layer-3" />
+          <img
+          data-src="./assets/image/main-page/medium-ground.png"
+            src="./assets/image/main-page/preloader.svg"
+            alt=""
+            class="layer layer-2 preloader"
+          />
+          <img
+          data-src="./assets/image/main-page/front-ground.png"
+          src="./assets/image/main-page/preloader.svg"
+
+            alt=""
+            class="layer layer-3 preloader"
+          />
         </header>
         <main class="main" id="main">
-            <div class="main__gradient"></div>
-            <section class="main__blocks blocks">
-              <div class="blocks__container container">
-                <article class="blocks__desrc-block">
-                  <div class="descr-block__content">
-                      <span class="descr-block__subtitle subtitle">GEt Started</span>
-                      <h2 class="descr-block__title title-h2">What level of  hiker are you?</h2>
-                      <p class="descr-block__text text">Determining what level of hiker you are can be an important tool when planning future hikes. This hiking level guide will help you plan hikes according to different hike ratings set by various websites like All Trails and Modern Hiker. What type of hiker are you – novice, moderate, advanced moderate, expert, or expert backpacker? </p>
-                      <a href="#" class="descr-block__button button">read more</a>
+          <div class="main__gradient"></div>
+          <section class="main__blocks blocks">
+            <div class="blocks__container container">
+              <article id="I01" class="blocks__descr-block descr-block">
+                <div class="descr-block__content">
+                  <div class="descr-block__content-body">
+                  <span class="descr-block__numering">01</span>
+
+                    <span class="descr-block__subtitle subtitle"
+                      >GEt Started</span
+                    >
+                    <h2 class="descr-block__title title-h2">
+                      What level of hiker are you?
+                    </h2>
+                    <p class="descr-block__text text">
+                      Determining what level of hiker you are can be an
+                      important tool when planning future hikes. This hiking
+                      level guide will help you plan hikes according to
+                      different hike ratings set by various websites like All
+                      Trails and Modern Hiker. What type of hiker are you –
+                      novice, moderate, advanced moderate, expert, or expert
+                      backpacker?
+                    </p>
+                    <a href="#" class="descr-block__button button">read more</a>
                   </div>
-                  <div class="descr-block__img image-wrapper">
-                      <img src="./assets/image/main-page/01.jpg" alt="Block image" class="image-wrapper__img">
-                  </div>
+                </div>
+                <div class="descr-block__img image-wrapper">
+                  <img
+                  data-src="./assets/image/main-page/01.jpg"
+                  src="./assets/image/main-page/preloader.svg"
+                  loading="lazy"
+                    alt="Block image"
+                    class="image-wrapper__img preloader"
+                  />
+                </div>
               </article>
-              <article class="blocks__desrc-block">
-                  <div class="descr-block__content">
-                      <span class="descr-block__subtitle subtitle">Hiking Essentials</span>
-                      <h2 class="descr-block__title title-h2">Picking the right Hiking Gear!</h2>
-                      <p class="descr-block__text text">The nice thing about beginning hiking is that you don’t really need any special gear, you can probably get away with things you already have.
-                          Let’s start with clothing. A typical mistake hiking beginners make is wearing jeans and regular clothes, which will get heavy and chafe wif they get sweaty or wet.</p>
-                      <a href="" class="descr-block__button button">read more</a>
+              <article id="I02" class="blocks__descr-block descr-block">
+                <div class="descr-block__content">
+                  <div class="descr-block__content-body">
+                  <span class="descr-block__numering">02</span>
+                    <span class="descr-block__subtitle subtitle"
+                      >Hiking Essentials</span
+                    >
+                    <h2 class="descr-block__title title-h2">
+                      Picking the right Hiking Gear!
+                    </h2>
+                    <p class="descr-block__text text">
+                      The nice thing about beginning hiking is that you don’t
+                      really need any special gear, you can probably get away
+                      with things you already have. Let’s start with clothing. A
+                      typical mistake hiking beginners make is wearing jeans and
+                      regular clothes, which will get heavy and chafe wif they
+                      get sweaty or wet.
+                    </p>
+                    <a href="" class="descr-block__button button">read more</a>
                   </div>
-                  <div class="descr-block__img image-wrapper">
-                      <img src="./assets/image/main-page/02.jpg" alt="Block image" class="image-wrapper__img">
-                  </div>
+                </div>
+                <div class="descr-block__img image-wrapper">
+                  <img
+                  data-src="./assets/image/main-page/02.jpg"
+
+                  src="./assets/image/main-page/preloader.svg"
+                  loading="lazy"
+
+                    alt="Block image"
+                    class="image-wrapper__img preloader"
+                  />
+                </div>
               </article>
-              <article class="blocks__desrc-block">
-                  <div class="descr-block__content">
-                      <span class="descr-block__subtitle subtitle">where you go is the key</span>
-                      <h2 class="descr-block__title title-h2">Understand Your Map & Timing</h2>
-                      <p class="descr-block__text text">To start, print out the hiking guide and map. If it’s raining, throw them in a Zip-Lock bag. Read over the guide, study the map, and have a good idea of what to expect. I like to know what my next landmark is as I hike. For example, I’ll read the guide and know that say, in a mile, I make a right turn at the junction..</p>
-                      <a href="" class="descr-block__button button">read more</a>
+              <article id="I03" class="blocks__descr-block descr-block">
+                <div class="descr-block__content">
+                  <div class="descr-block__content-body">
+                  <span class="descr-block__numering">03</span>
+
+                    <span class="descr-block__subtitle subtitle"
+                      >where you go is the key</span
+                    >
+                    <h2 class="descr-block__title title-h2">
+                      Understand Your Map & Timing
+                    </h2>
+                    <p class="descr-block__text text">
+                      To start, print out the hiking guide and map. If it’s
+                      raining, throw them in a Zip-Lock bag. Read over the
+                      guide, study the map, and have a good idea of what to
+                      expect. I like to know what my next landmark is as I hike.
+                      For example, I’ll read the guide and know that say, in a
+                      mile, I make a right turn at the junction..
+                    </p>
+                    <a href="" class="descr-block__button button">read more</a>
                   </div>
-                  <div class="descr-block__img image-wrapper">
-                      <img src="./assets/image/main-page/03.jpg" alt="Block image" class="image-wrapper__img">
-                  </div>
+                </div>
+                <div class="descr-block__img image-wrapper">
+                  <img
+                  data-src="./assets/image/main-page/03.jpg"
+                  loading="lazy"
+
+                  src="./assets/image/main-page/preloader.svg"
+
+                    alt="Block image"
+                    class="image-wrapper__img preloader"
+                  />
+                </div>
               </article>
-              </div>
-            </section>
+            </div>
+          </section>
         </main>
         <footer class="footer">
-            <div class="footer__container container">
-                <div class="footer__mntn-info mntn-info">
-                    <div class="mntn-info__info">
-                        <span class="mntn-info__title">MNTN</span>
-                        <p class="mntn-info__text text">Get out there & discover your next slope, mountain & destination!</p>
-                    </div>
-                    <p class="mntn-info__copyrights">Copyright 2019 MNTN, Inc. Terms & Privacy</p>
-                </div>
-                <div class="footer__navs">
-                    <div class="footer__navigation navigation-mini">
-                        <span class="navigation-mini__title">
-                            More on The Blog
-                        </span>
-                        <ul class="navigation-mini__list">
-                            <li class="navigation-mini__item"><a href="" class="navigation-mini__link">About MNTN</a></li>
-                            <li class="navigation-mini__item"><a href="" class="navigation-mini__link">Contributors & Writers</a></li>
-                            <li class="navigation-mini__item"><a href="" class="navigation-mini__link">Write For Us</a></li>
-                            <li class="navigation-mini__item"><a href="" class="navigation-mini__link">Contact Us</a></li>
-                            <li class="navigation-mini__item"><a href="" class="navigation-mini__link">Privacy Policy</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer__navigation navigation-mini">
-                        <span class="navigation-mini__title">
-                            More on MNTN
-                        </span>
-                        <ul class="navigation-mini__list">
-                            <li class="navigation-mini__item"><a href="" class="navigation-mini__link">The Team</a></li>
-                            <li class="navigation-mini__item"><a href="" class="navigation-mini__link">Jobs</a></li>
-                            <li class="navigation-mini__item"><a href="" class="navigation-mini__link">Press</a></li>
-                        </ul>
-                    </div>
-                </div>
+          <div class="footer__container container">
+            <div class="footer__mntn-info mntn-info">
+              <div class="mntn-info__info">
+                <span class="mntn-info__title">MNTN</span>
+                <p class="mntn-info__text text">
+                  Get out there & discover your next slope, mountain &
+                  destination!
+                </p>
+              </div>
+              <p class="mntn-info__copyrights">
+                Copyright 2019 MNTN, Inc. Terms & Privacy
+              </p>
             </div>
+            <div class="footer__navs">
+              <div class="footer__navigation navigation-mini">
+                <span class="navigation-mini__title"> More on The Blog </span>
+                <ul class="navigation-mini__list">
+                  <li class="navigation-mini__item">
+                    <a href="" class="navigation-mini__link">About MNTN</a>
+                  </li>
+                  <li class="navigation-mini__item">
+                    <a href="" class="navigation-mini__link"
+                      >Contributors & Writers</a
+                    >
+                  </li>
+                  <li class="navigation-mini__item">
+                    <a href="" class="navigation-mini__link">Write For Us</a>
+                  </li>
+                  <li class="navigation-mini__item">
+                    <a href="" class="navigation-mini__link">Contact Us</a>
+                  </li>
+                  <li class="navigation-mini__item">
+                    <a href="" class="navigation-mini__link">Privacy Policy</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer__navigation navigation-mini">
+                <span class="navigation-mini__title"> More on MNTN </span>
+                <ul class="navigation-mini__list">
+                  <li class="navigation-mini__item">
+                    <a href="" class="navigation-mini__link">The Team</a>
+                  </li>
+                  <li class="navigation-mini__item">
+                    <a href="" class="navigation-mini__link">Jobs</a>
+                  </li>
+                  <li class="navigation-mini__item">
+                    <a href="" class="navigation-mini__link">Press</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </footer>
       </div>
     </div>
