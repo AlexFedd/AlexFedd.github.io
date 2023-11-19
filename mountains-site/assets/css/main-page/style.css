@@ -310,14 +310,16 @@ main {
   align-items: center;
   justify-content: space-between;
 }
-.header__logo {
-  order: 2;
-}
-.header__navigation {
-  order: 3;
-}
-.header__account-btn {
-  order: 1;
+@media (max-width: 48em) {
+  .header__logo {
+    order: 2;
+  }
+  .header__navigation {
+    order: 3;
+  }
+  .header__account-btn {
+    order: 1;
+  }
 }
 .header__content {
   display: flex;

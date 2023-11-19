@@ -43,16 +43,18 @@
     justify-content: space-between;
   }
 
-  &__logo {
-    order: 2;
-  }
-
-  &__navigation {
-    order: 3;
-  }
-
-  &__account-btn {
-    order: 1;
+  @media (max-width: 48em) {
+    &__logo {
+        order: 2;
+      }
+    
+      &__navigation {
+        order: 3;
+      }
+    
+      &__account-btn {
+        order: 1;
+      }
   }
   &__content {
     display: flex;
