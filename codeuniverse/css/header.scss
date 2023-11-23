@@ -1,0 +1,128 @@
+.header {
+    position: relative;
+    &__navigation {
+        align-self: center;
+        padding-top: 40px;
+        @media (max-width: 1023px) {
+            padding-top: 0;
+        }
+        @media (max-width: 1023px) {
+            & > .navigation__list {
+                padding-top: 60px;
+                position: fixed;
+                flex-direction: column;
+                align-items: start;
+                padding-left: 30px;
+                gap: 50px;
+                width: 320px;
+                left: -320px;
+                z-index: 999;
+                background-color: #0C2229;
+                top: 0;
+                bottom: -200px;
+                &--opened{
+                    left: 0;
+                }
+            }
+        }
+    }
+}
+
+.header > .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navigation {
+
+    &__list {
+        transition: all 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
+        display: flex;
+        gap: 50px;
+        align-items: center;
+    }
+
+    &__link {
+        color: #0C2229;
+        transition: all 0.2s ease-in;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.48px;
+        @media (hover: hover) {
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        @media (max-width: 1023px) {
+            color: #C1E6FA;
+        }
+    }
+
+    &__link--active {
+        text-decoration: underline;
+    }
+}
+
+.menu-switcher {
+    right: 25px;
+    top: 25px;
+    position: absolute;
+    z-index: 1001;;
+    display: none;
+    flex-direction: column;
+    transition: gap .4s ease-in-out;
+    gap: 8px;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-tap-highlight-color: transparent;
+    &__line {
+        object-fit: cover;
+        position: relative;
+        width: 50px;
+        -webkit-tap-highlight-color: transparent;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        &:focus {
+            outline: none !important;
+        }
+    }
+
+    &__line:nth-child(1) {
+        top: 0;
+    }
+
+    &__line:nth-child(3) {
+        bottom: 0;
+    }
+    &--opened {
+        position: fixed !important;
+    }
+    &--opened &__line:nth-child(1) {
+        transform: rotate(45deg);
+        top: 10px;
+        //position: absolute;
+    }
+
+    &--opened &__line:nth-child(2) {
+        transform: rotate(-45deg);
+    }
+
+    &--opened &__line:nth-child(3) {
+        //position: absolute;
+        bottom: 10px;
+        transform: rotate(45deg);
+    }
+
+    @media (max-width: 1023px) {
+         display: flex;
+    }
+
+
+
+}

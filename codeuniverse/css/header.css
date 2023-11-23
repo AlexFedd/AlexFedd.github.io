@@ -1,0 +1,118 @@
+.header {
+  position: relative;
+}
+.header__navigation {
+  align-self: center;
+  padding-top: 40px;
+}
+@media (max-width: 1023px) {
+  .header__navigation {
+    padding-top: 0;
+  }
+}
+@media (max-width: 1023px) {
+  .header__navigation > .navigation__list {
+    padding-top: 60px;
+    position: fixed;
+    flex-direction: column;
+    align-items: start;
+    padding-left: 30px;
+    gap: 50px;
+    width: 320px;
+    left: -320px;
+    z-index: 999;
+    background-color: #0C2229;
+    top: 0;
+    bottom: -200px;
+  }
+  .header__navigation > .navigation__list--opened {
+    left: 0;
+  }
+}
+
+.header > .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navigation__list {
+  transition: all 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+.navigation__link {
+  color: #0C2229;
+  transition: all 0.2s ease-in;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.48px;
+}
+@media (hover: hover) {
+  .navigation__link:hover {
+    text-decoration: underline;
+  }
+}
+@media (max-width: 1023px) {
+  .navigation__link {
+    color: #C1E6FA;
+  }
+}
+.navigation__link--active {
+  text-decoration: underline;
+}
+
+.menu-switcher {
+  right: 25px;
+  top: 25px;
+  position: absolute;
+  z-index: 1001;
+  display: none;
+  flex-direction: column;
+  transition: gap 0.4s ease-in-out;
+  gap: 8px;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: transparent;
+}
+.menu-switcher__line {
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+  width: 50px;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.menu-switcher__line:focus {
+  outline: none !important;
+}
+.menu-switcher__line:nth-child(1) {
+  top: 0;
+}
+.menu-switcher__line:nth-child(3) {
+  bottom: 0;
+}
+.menu-switcher--opened {
+  position: fixed !important;
+}
+.menu-switcher--opened .menu-switcher__line:nth-child(1) {
+  transform: rotate(45deg);
+  top: 10px;
+}
+.menu-switcher--opened .menu-switcher__line:nth-child(2) {
+  transform: rotate(-45deg);
+}
+.menu-switcher--opened .menu-switcher__line:nth-child(3) {
+  bottom: 10px;
+  transform: rotate(45deg);
+}
+@media (max-width: 1023px) {
+  .menu-switcher {
+    display: flex;
+  }
+}
