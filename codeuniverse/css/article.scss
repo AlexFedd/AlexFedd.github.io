@@ -4,7 +4,9 @@
         position: relative;
         display: flex;
         gap: 30px;
-        
+        @media (max-width: 1439px) {
+            flex-direction: column;
+        }
     }
 
     &__content {
@@ -13,6 +15,9 @@
 
     &__sidebar {
         flex: 0 2 413px;
+        @media (max-width: 1439px) {
+            flex: 0 0 auto;
+        }
     }
 }
 
@@ -49,11 +54,15 @@
 
     &__slider {
         position: relative;
-        overflow: hidden;
-        width: 847px;
+
+        max-width: 847px;
         height: 477px;
         background: #C1E6FA;
         box-shadow: 4px 4px 15px 0px rgba(69, 140, 162, 0.40);
+        width: 100%;
+        @media (max-width: 767px) {
+            height: 320px;
+        }
     }
 }
 
@@ -62,6 +71,9 @@
     z-index: 120;
     top: 50%;
     transform: translateY(-50%);
+    @media (max-width: 767px) {
+        width: 30px;
+    }
 }
 
 .button-next {
@@ -81,6 +93,9 @@
         font-style: normal;
         font-weight: 600;
         line-height: normal;
+        @media (max-width: 767px) {
+            font-size: 18px;
+        }
     }
 
     &__inf {
@@ -89,10 +104,14 @@
         font-style: normal;
         font-weight: 600;
         line-height: normal;
+        @media (max-width: 767px) {
+            font-size: 18px;
+        }
     }
 }
 
 .swiper-wrapper {
+    overflow: hidden;
 }
 .swiper-slide {
 }
@@ -102,10 +121,17 @@
 }
 
 .sidebar {
+
     align-self: flex-start;
     display: flex;
     flex-direction: column;
+    max-width: 413px;
+    width: 100%;
     gap: 10px;
+    @media (max-width: 1439px) {
+        max-width: 80%;
+        align-self: center;
+    }
     &--fixed {
         position: fixed;
         top: 50px;
@@ -131,16 +157,27 @@
         padding: 15px 25px;
         background-color: #C1E6FA;
         gap: 45px;
-        box-shadow: 4px 4px 15px rgba(69, 140, 162, 0.40);
+        box-shadow: 4px 4px 15px #458ca266;
+        @media (max-width: 1439px) {
+            justify-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
     }
 
     &__item {
+        transition: all 0.2s ease-in-out;
         position: relative;
         display: flex;
         gap: 16px;
         align-items: center;
         justify-content: flex-start;
-
+        &:hover {
+            background-color: #1D434E;
+            & h3 {
+                color: #C1E6FA
+            };
+        }
     }
 
     &__image {

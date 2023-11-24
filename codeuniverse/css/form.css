@@ -1,0 +1,138 @@
+.main {
+  margin: 60px 0;
+}
+
+.heading__container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.load-line {
+  position: relative;
+  width: 100%;
+  height: 5px;
+  background-color: rgba(69, 140, 162, 0.5019607843);
+}
+.load-line__loaded {
+  transition: width 0.4s ease-in-out;
+  z-index: 2;
+  width: 33%;
+  position: absolute;
+  height: inherit;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #458CA2;
+}
+
+.form__step {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.form__inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  min-height: 100%;
+}
+.form__input-block {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.form__label {
+  color: #0C2229;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+@media (max-width: 767px) {
+  .form__label {
+    font-size: 24px;
+  }
+}
+.form .textarea-block {
+  height: 100%;
+}
+.form .textarea {
+  height: 100%;
+  resize: none;
+}
+@media (max-width: 767px) {
+  .form .textarea {
+    height: 320px;
+  }
+}
+.form__input {
+  padding: 20px 25px;
+  max-width: 371px;
+  width: 100%;
+  border: 4px solid #1D434E;
+  color: #306677;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+@media (max-width: 767px) {
+  .form__input {
+    font-size: 18px;
+    max-width: 100%;
+  }
+}
+.form__row {
+  display: flex;
+  gap: 72px;
+}
+@media (max-width: 767px) {
+  .form__row {
+    flex-direction: column;
+    gap: 50px;
+  }
+}
+
+.step-1__form-body {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+
+.step-2__form-body {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+
+.step-3__form-body {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+.step-3__ready {
+  text-align: center;
+  padding: 25vh 0;
+  color: #1D434E;
+  font-family: IBM Plex Mono;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+@media (max-width: 1023px) {
+  .step-3__ready {
+    font-size: 36px;
+  }
+}
+@media (max-width: 767px) {
+  .step-3__ready {
+    font-size: 24px;
+  }
+}

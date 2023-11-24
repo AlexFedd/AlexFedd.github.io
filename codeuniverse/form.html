@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./image/fav.jpg" type="image/png">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/form.css">
+    <title>Добавить новое приложение</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="header__navigation navigation">
+                <button type="button" class="header__menu-switcher menu-switcher" >
+                    <img src="./image/line.svg" alt class="menu-switcher__line">
+                    <img src="./image/line.svg" alt class="menu-switcher__line">
+                    <img src="./image/line.svg" alt class="menu-switcher__line">
+                </button>
+                <ul class="navigation__list">
+                    <li><a href="./index.html" class="navigation__link">Главная</a></li>
+                    <li><a href="./contacts.html" class="navigation__link">Информация о нас</a></li>
+                    <li><a href="./form.html" class="navigation__link">Добавить новое</a></li>
+                    <li><a href="./forum.html" class="navigation__link">Форум</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <section class="heading">
+            <div class="heading__container container">
+                <h1 class="title-h1 heading__title">Добавить новое приложение</h1>
+                <div class="heading__load-line load-line">
+                    <div class="load-line__loaded"></div>
+                </div>
+            </div>
+        </section>
+        <section class="main-form">
+            <div class="main-form__container container">
+                <form action="" class="main-form__form form">
+                    <section class="form__step step-1">
+                        <h2 class="form__title title-h2">1. Заполните данные для обратной связи</h2>
+                        <div class="step-1__form-body">
+                            <div class="form__inputs">
+                                <article class="form__input-block">
+                                    <label class="form__label" for="name">Ваше имя</label>
+                                    <input type="text" name="name" placeholder="Имя" class="form__input">
+                                </article>
+                                <article class="form__input-block">
+                                    <label class="form__label" for="email">Ваша почта</label>
+                                    <input type="email" name="email" placeholder="Почта" class="form__input">
+                                </article>
+                                <article class="form__input-block">
+                                    <label class="form__label" for="email">Ваше положение</label>
+                                    <select type="email" name="email" class="form__input">
+                                        <option value="Owner">Я - владелец</option>
+                                        <option value="User">Я - пользователь</option>
+                                    </select>
+                                </article>
+                            </div>
+                            <button class="button form__button" id="button-1-next">Далее</button>
+                        </div>
+                    </section>
+                    <section class="form__step step-2" style="display: none;">
+                        <h2 class="form__title title-h2">2. Заполните данные о приложении</h2>
+                        <div class="step-2__form-body">
+                            <div class="form__row">
+                                <div class="form__inputs">
+                                    <article class="form__input-block">
+                                        <label class="form__label" for="app-name">Имя приложения</label>
+                                        <input type="text" name="app-name" placeholder="Название" class="form__input">
+                                    </article>
+                                    <article class="form__input-block">
+                                        <label class="form__label" for="website">Сайт приложения</label>
+                                        <input type="url" name="website" placeholder="Сайт" class="form__input">
+                                    </article>
+                                    <article class="form__input-block">
+                                        <label class="form__label" for="cost">Стоимость</label>
+                                        <select name="cost" class="form__input">
+                                            <option value="Free">Бесплатное</option>
+                                            <option value="Paid">Платное</option>
+                                        </select>
+                                    </article>
+                                </div>
+                                <div class="form__inputs">
+                                    <article class="form__input-block">
+                                        <label class="form__label" for="category">Категория</label>
+                                        <select  name="category" class="form__input">
+                                            <option value="CodeEditor">Редактор кода</option>
+                                            <option value="Modelier3D">3D Моделирование</option>
+                                        </select>
+                                    </article>
+                                    <article class="form__input-block textarea-block">
+                                        <label class="form__label" for="description">Краткое описание</label>
+                                        <textarea name="description" placeholder="Описание" class="textarea form__input"></textarea>
+                                    </article>
+                                </div>
+                            </div>
+                            <div class="form__buttons">
+                                <button class="button form__button" id="button-2-prev">Назад</button>
+                                <button class="button form__button" id="button-2-next">Отправить</button>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="form__step step-3" style="display: none;">
+                        <h2 class="form__title title-h2">3. Готово</h2>
+                        <div class="step-3__form-body">
+                            <span class="step-3__ready">Ваша заявка отправлена!</span>
+                        </div>
+                    </section>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__container container">
+            <nav class="footer__navigation navigation">
+                <ul class="navigation__list">
+                    <li><a href="./index.html" class="navigation__link">Главная</a></li>
+                    <li><a href="./contacts.html" class="navigation__link">Информация о нас</a></li>
+                    <li><a href="./form.html" class="navigation__link">Добавить новое</a></li>
+                    <li><a href="./forum.html" class="navigation__link">Форум</a></li>
+                </ul>
+            </nav>
+            <span class="footer__name">CodeUniverse 2023</span>
+            <div class="soc-media">
+                <div class="soc-media__item">
+                    <img src="./image/twitter.svg" alt="" class="soc-media__image">
+                    <p class="soc-media__name">Наш Twitter</p>
+                </div>
+                <div class="soc-media__item">
+                    <img src="./image/facebook.svg" alt="" class="soc-media__image">
+                    <p class="soc-media__name">Наш Facebook</p>
+                </div>
+                <div class="soc-media__item">
+                    <img src="./image/inst.svg" alt="" class="soc-media__image">
+                    <p class="soc-media__name">Наш Instagram</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/main.js"></script>
+    <script src="./js/form.js"></script>
+</body>
+</html>

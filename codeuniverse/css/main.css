@@ -111,6 +111,7 @@
   }
 }
 .sidebar__item {
+  transition: all 0.2s ease-in-out;
   position: relative;
   display: flex;
   gap: 16px;
@@ -121,6 +122,12 @@
   .sidebar__item {
     flex: 0 0 45%;
   }
+}
+.sidebar__item:hover {
+  background-color: #1D434E;
+}
+.sidebar__item:hover h3 {
+  color: #C1E6FA;
 }
 .sidebar__item::after {
   content: "";

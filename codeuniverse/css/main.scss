@@ -108,6 +108,7 @@
     }
 
     &__item {
+        transition: all 0.2s ease-in-out;
         position: relative;
         display: flex;
         gap: 16px;
@@ -115,6 +116,12 @@
         justify-content: flex-start;
         @media (max-width: 1439px) {
             flex: 0 0 45%;
+        }
+        &:hover {
+            background-color: #1D434E;
+            & h3 {
+                color: #C1E6FA
+            };
         }
         &::after {
             content: '';
