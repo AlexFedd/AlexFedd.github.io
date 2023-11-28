@@ -1,0 +1,84 @@
+body {
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Open Sans';
+    background-color: #FAFAFA;
+    color: #282827;
+}
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-left: 80px;
+    padding-right: 80px;
+    @media (max-width: 1439px) {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    @media (max-width: 1023px) {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    @media (max-width: 768px) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+.main-title-h1 {
+    color:  #111110;
+    font-family: Antic Didone;
+    font-size: 123.363px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 123.363px */
+    letter-spacing: 12.336px;
+    text-transform: uppercase;
+}
+.title-h1 {
+    font-size: 76.244px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+.title-h2 {
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+.title-h3 {
+    font-family: Antic Didone;
+    font-size: 29.124px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.button {
+    color: #282827;
+    font-size: 29.124px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+.text {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 155%; /* 37.2px */
+}
+.footer {
+    background-color: #DCDCD633;
+    border-top: 1px solid #DCDCD6;
+    padding: 138px 0;
+    &__text {
+        text-align: center;
+        color:  #111110;
+        font-family: Antic Didone;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: lowercase;
+    }
+}
