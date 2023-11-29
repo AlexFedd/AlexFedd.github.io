@@ -1,0 +1,110 @@
+.product-page__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.product-page__body {
+  width: 100%;
+  max-width: 1105px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.product-page__image {
+  border-radius: 8px;
+  border-bottom: 1px solid rgba(220, 220, 214, 0.2);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+.product-page__info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.product-page__text {
+  text-align: center;
+}
+.product-page__add-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .product-page__add-info {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+.product-page__species {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.product-page__spec {
+  color: #484846;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 155%; /* 37.2px */
+}
+.product-page__price {
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 155%; /* 99.2px */
+}
+@media (max-width: 767px) {
+  .product-page__price {
+    align-self: flex-end;
+  }
+}
+.product-page__options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .product-page__options {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .product-page__quanity {
+    align-self: flex-end;
+  }
+}
+.product-page__add-to-cart {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.product-page__cart {
+  width: 70px;
+}
+.product-page__add-to-cart-text {
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 155%; /* 55.8px */
+  text-decoration-line: underline;
+}
+@media (max-width: 767px) {
+  .product-page__add-to-cart-text {
+    font-size: 28px;
+  }
+}
+
+.quanity {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.quanity__counter {
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 54px */
+  letter-spacing: 2.16px;
+}

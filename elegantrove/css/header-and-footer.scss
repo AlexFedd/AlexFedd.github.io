@@ -1,0 +1,31 @@
+.header {
+    padding: 50px 0;
+    background-color: #dcdcd633;
+    border-bottom: 1px solid #dcdcd6;
+    @media (max-width: 767px) {
+        padding: 40px 0;
+    }
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    &__heading {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        width: 70px;
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__title {
+    }
+}

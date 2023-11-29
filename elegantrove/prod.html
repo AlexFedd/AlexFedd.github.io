@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/header-and-footer.css">
+    <link rel="stylesheet" href="./css/prod.css">
+    <link rel="stylesheet" href="./css/card.css">
+
+    <title>Elegantrove</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container container">
+        <div class="header__heading">
+            <img src="./image/logo.png" alt="" class="header__logo">
+            <nav class="header__navigation navigation">
+                <button type="button" class="header__menu-switcher menu-switcher" >
+                  <img src="./image/line.svg" alt class="menu-switcher__line">
+                  <img src="./image/line.svg" alt class="menu-switcher__line">
+                  <img src="./image/line.svg" alt class="menu-switcher__line">
+              </button>
+                <ul class="navigation__list">
+                  <li><a href="./index.html" class="navigation__link">главная</a></li>
+                  <li><a href="./catalog.html" class="navigation__link">каталог</a></li>
+                  <li>
+                    <a href="" class="navigation__link">
+                      корзина <img src="./image/cart.svg" class="navigation__cart-img" alt="" />
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+        </div>
+        <div class="header__content">
+            <h1 class="header__title title-h1">Eternal Promise Band</h1>
+      </div>
+    </header>
+    <main class="main">
+        <section class="product-page">
+            <div class="product-page__container container">
+                <div class="product-page__body">
+                    <img src="./image/example.png" alt="" class="product-page__image">
+                    <div class="product-page__info">
+                        <p class="product-page__text text">Lorem ipsum dolor sit amet consectetur. Ultrices nibh suspendisse ullamcorper eget duis placerat id. Mollis quis integer arcu quisque. Tellus eget dui eu viverra magna netus blandit nibh. Pellentesque dui vestibulum integer amet venenatis. Varius purus id maecenas maecenas habitasse at morbi nunc nunc. Tellus elementum massa habitasse auctor aenean ac elit. Ut egestas diam quam augue habitant ac tempor. Dolor et nisl egestas ac nunc aliquet ornare sit. Viverra pretium id placerat amet diam in faucibus dolor nec.</p>
+                        <div class="product-page__add-info">
+                            <div class="product-page__species">
+                                <p class="product-page__spec">Страна производитель: Россия</p>
+                                <p class="product-page__spec">Вес: 2 грамм</p>
+                                <p class="product-page__spec">Материал: Золото, серебро, бриллиант</p>
+                                <p class="product-page__spec">Размер: 15.5</p>
+                            </div>
+                            <span class="product-page__price">$500</span>
+                        </div>
+                    </div>
+                    <div class="product-page__options">
+                        <div class="product-page__quanity quanity">
+                            <img src="./image/minus.svg" alt="Минус" class="quanity__minus">
+                            <span class="quanity__counter">1</span>
+                            <img src="./image/plus.svg" alt="Плюс" class="quanity__plus">
+                        </div>
+                        <button class="product-page__add-to-cart">
+                            <img src="./image/cart.svg" alt="Корзина" class="product-page__cart">
+                            <span class="product-page__add-to-cart-text">Добавить в корзину</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about-us">
+            <div class="about-us__container container">
+              <h2 class="about-us__title title-h2">Контакты</h2>
+              <div class="about-us__map">
+                <img src="./image/map.jpg" alt="" class="about-us__map-image">
+              </div>
+              <ul class="about-us__contacts-list">
+                <li class="about-us__contacts-item">
+                    Адрес: <br>
+                    г. Москва ул. Улица д. Дом этаж Этаж
+                </li>
+                <li class="about-us__contacts-item">
+                    Электронная почта:  <br>
+                    example@mail.ru
+                </li>
+                <li class="about-us__contacts-item">
+                    Телефонный номер: <br>
+                    +7-777-777-77-77
+                </li>
+              </ul>
+            </div>
+          </section>
+    </main>
+    <footer class="footer">
+        <p class="footer__text">elegantrove 2023</p>
+    </footer>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

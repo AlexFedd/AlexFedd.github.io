@@ -7,15 +7,21 @@
     <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/style-index.css">
+    <link rel="stylesheet" href="./css/card.css">
     <title>Elegantrove</title>
   </head>
   <body>
     <header class="header">
-      <div class="header-container container">
+      <div class="header__container container">
         <nav class="header__navigation navigation">
+          <button type="button" class="header__menu-switcher menu-switcher" >
+            <img src="./image/line.svg" alt class="menu-switcher__line">
+            <img src="./image/line.svg" alt class="menu-switcher__line">
+            <img src="./image/line.svg" alt class="menu-switcher__line">
+        </button>
           <ul class="navigation__list">
-            <li><a href="" class="navigation__link">главная</a></li>
-            <li><a href="" class="navigation__link">каталог</a></li>
+            <li><a href="./index.html" class="navigation__link">главная</a></li>
+            <li><a href="./catalog.html" class="navigation__link">каталог</a></li>
             <li>
               <a href="" class="navigation__link">
                 корзина <img src="./image/cart.svg" class="navigation__cart-img" alt="" />
@@ -45,7 +51,7 @@
                 </h3>
                 <div class="product-card__info">
                   <span class="product-card__price">$500</span>
-                  <a href="" class="product-card__button button">посмотреть</a>
+                  <a href="./prod.html" class="product-card__button button">посмотреть</a>
                 </div>
               </div>
             </article>
@@ -57,7 +63,7 @@
                 </h3>
                 <div class="product-card__info">
                   <span class="product-card__price">$500</span>
-                  <a href="" class="product-card__button button">посмотреть</a>
+                  <a href="./prod.html" class="product-card__button button">посмотреть</a>
                 </div>
               </div>
             </article>
@@ -69,7 +75,7 @@
                 </h3>
                 <div class="product-card__info">
                   <span class="product-card__price">$500</span>
-                  <a href="" class="product-card__button button">посмотреть</a>
+                  <a href="./prod.html" class="product-card__button button">посмотреть</a>
                 </div>
               </div>
             </article>
@@ -120,5 +126,6 @@
     <footer class="footer">
         <p class="footer__text">elegantrove 2023</p>
     </footer>
+    <script src="./js/main.js"></script>
   </body>
 </html>
