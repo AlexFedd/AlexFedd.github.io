@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/header-and-footer.css">
+    <link rel="stylesheet" href="./css/catalog.css">
+    <link rel="stylesheet" href="./css/cart.css">
+
+    <title>Elegantrove</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container container">
+        <div class="header__heading">
+            <img src="./image/logo.png" alt="" class="header__logo">
+            <nav class="header__navigation navigation">
+                <button type="button" class="header__menu-switcher menu-switcher" >
+                  <img src="./image/line.svg" alt class="menu-switcher__line">
+                  <img src="./image/line.svg" alt class="menu-switcher__line">
+                  <img src="./image/line.svg" alt class="menu-switcher__line">
+              </button>
+                <ul class="navigation__list">
+                  <li><a href="./index.html" class="navigation__link">главная</a></li>
+                  <li><a href="./catalog.html" class="navigation__link">каталог</a></li>
+                  <li>
+                    <a href="" class="navigation__link">
+                      корзина <img src="./image/cart.svg" class="navigation__cart-img" alt="" />
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+        </div>
+        <div class="header__content">
+            <h1 class="header__title title-h1">Наши изделия</h1>
+            <div class="cart-options">
+                <p class="cart-options__total-cost">
+                    Всего: $<span class="cart-options__total-number">2000</span>
+                </p>
+                <a href="" class="cart-options__button button">Оформить заказ</a>
+            </div>
+      </div>
+    </header>
+    <main class="main">
+        <section class="cart-items">
+            <div class="cart-items__container container">
+                <article class="cart-items__item cart-item">
+                    <div class="cart-item__content">
+                        <img src="./image/example.png" alt="" class="cart-item__image">
+                        <div class="cart-item__info">
+                            <h2 class="cart-item__title">Eternal Promise Band</h2>
+                            <span class="cart-item__price">$500</span>
+                        </div>
+                    </div>
+                    <div class="cart-item__func">
+                        <div class="cart-item__quanity quanity">
+                            <img src="./image/minus.svg" alt="Минус" class="quanity__minus">
+                            <span class="quanity__counter">1</span>
+                            <img src="./image/plus.svg" alt="Плюс" class="quanity__plus">
+                        </div>
+                        <img src="./image/close.svg" alt="" class="cart-item__close">
+                    </div>
+                </article>
+                <article class="cart-items__item cart-item">
+                    <div class="cart-item__content">
+                        <img src="./image/example.png" alt="" class="cart-item__image">
+                        <div class="cart-item__info">
+                            <h2 class="cart-item__title">Eternal Promise Band</h2>
+                            <span class="cart-item__price">$500</span>
+                        </div>
+                    </div>
+                    <div class="cart-item__func">
+                        <div class="cart-item__quanity quanity">
+                            <img src="./image/minus.svg" alt="Минус" class="quanity__minus">
+                            <span class="quanity__counter">1</span>
+                            <img src="./image/plus.svg" alt="Плюс" class="quanity__plus">
+                        </div>
+                        <img src="./image/close.svg" alt="" class="cart-item__close">
+                    </div>
+                </article>
+                <article class="cart-items__item cart-item">
+                    <div class="cart-item__content">
+                        <img src="./image/example.png" alt="" class="cart-item__image">
+                        <div class="cart-item__info">
+                            <h2 class="cart-item__title">Eternal Promise Band</h2>
+                            <span class="cart-item__price">$500</span>
+                        </div>
+                    </div>
+                    <div class="cart-item__func">
+                        <div class="cart-item__quanity quanity">
+                            <img src="./image/minus.svg" alt="Минус" class="quanity__minus">
+                            <span class="quanity__counter">1</span>
+                            <img src="./image/plus.svg" alt="Плюс" class="quanity__plus">
+                        </div>
+                        <img src="./image/close.svg" alt="" class="cart-item__close">
+                    </div>
+                </article>
+                <article class="cart-items__item cart-item">
+                    <div class="cart-item__content">
+                        <img src="./image/example.png" alt="" class="cart-item__image">
+                        <div class="cart-item__info">
+                            <h2 class="cart-item__title">Eternal Promise Band</h2>
+                            <span class="cart-item__price">$500</span>
+                        </div>
+                    </div>
+                    <div class="cart-item__func">
+                        <div class="cart-item__quanity quanity">
+                            <img src="./image/minus.svg" alt="Минус" class="quanity__minus">
+                            <span class="quanity__counter">1</span>
+                            <img src="./image/plus.svg" alt="Плюс" class="quanity__plus">
+                        </div>
+                        <img src="./image/close.svg" alt="" class="cart-item__close">
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="footer__text">elegantrove 2023</p>
+    </footer>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

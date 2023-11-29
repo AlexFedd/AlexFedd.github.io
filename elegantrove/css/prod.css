@@ -95,16 +95,3 @@
     font-size: 28px;
   }
 }
-
-.quanity {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-}
-.quanity__counter {
-  font-size: 54px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 100%; /* 54px */
-  letter-spacing: 2.16px;
-}
