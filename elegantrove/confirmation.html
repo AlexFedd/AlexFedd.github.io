@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/header-and-footer.css">
+    <link rel="stylesheet" href="./css/catalog.css">
+    <link rel="stylesheet" href="./css/confirmation.css">
+
+    <title>Elegantrove</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container container">
+        <div class="header__heading">
+            <img src="./image/logo.png" alt="" class="header__logo">
+            <nav class="header__navigation navigation">
+                <button type="button" class="header__menu-switcher menu-switcher" >
+                  <img src="./image/line.svg" alt class="menu-switcher__line">
+                  <img src="./image/line.svg" alt class="menu-switcher__line">
+                  <img src="./image/line.svg" alt class="menu-switcher__line">
+              </button>
+                <ul class="navigation__list">
+                  <li><a href="./index.html" class="navigation__link">главная</a></li>
+                  <li><a href="./catalog.html" class="navigation__link">каталог</a></li>
+                  <li>
+                    <a href="" class="navigation__link">
+                      корзина <img src="./image/cart.svg" class="navigation__cart-img" alt="" />
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+        </div>
+        <div class="header__content">
+            <h1 class="header__title title-h1">Оформление</h1>
+            <div class="cart-options">
+                <p class="cart-options__total-cost">
+                    Всего: $<span class="cart-options__total-number">2000</span>
+                </p>
+            </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="main__container container">
+        <form action="submit" class="form">
+          <article class="form__block personal-info">
+            <h2 class="form__title title-h2">Личная информация:</h2>
+            <div class="form__body">
+              <div class="form__column">
+                <input type="text" class="form__input" placeholder="Ваше имя">
+                <textarea name="name" class="form__input textarea" placeholder="Указание к заказу"></textarea>
+              </div>
+              <div class="form__column">
+                <input type="text" class="form__input" placeholder="Ваша фамилия">
+                <input type="text" class="form__input" placeholder="Номер телефона">
+                <input type="text" class="form__input" placeholder="Самовывоз*">
+                <p class="form__add-text">*Забрать свой заказ вы можете через 2 дня после оформления по адресу нашего магазина </p>
+              </div>
+            </div>
+          </article>
+          <article class="form__block delivery-info">
+            <h2 class="form__title title-h2">Информация о доставке:</h2>
+            <div class="form__body">
+              <div class="form__column">
+                <input type="text" class="form__input" placeholder="Город">
+                <input type="text" class="form__input" placeholder="Дом">
+                <input type="text" class="form__input" placeholder="Этаж">
+              </div>
+              <div class="form__column">
+                <input type="text" class="form__input" placeholder="Улица">
+                <input type="text" class="form__input" placeholder="Подъезд">
+                <input type="text" class="form__input" placeholder="Этаж">
+              </div>
+            </div>
+          </article>
+          <button class="form__button button">Сделать заказ</button>
+        </form>
+      </div>
+    </main>
+    <footer class="footer">
+        <p class="footer__text">elegantrove 2023</p>
+    </footer>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

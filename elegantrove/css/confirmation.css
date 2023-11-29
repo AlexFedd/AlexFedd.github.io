@@ -1,0 +1,132 @@
+.cart-options__total-cost {
+  color: #282827;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-align: end;
+}
+@media (max-width: 1023px) {
+  .cart-options__total-cost {
+    font-size: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .cart-options__total-cost {
+    font-size: 36px;
+  }
+}
+@media (max-width: 424px) {
+  .cart-options__total-cost {
+    font-size: 28px;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.form__block {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.form__body {
+  align-self: center;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1104px;
+  gap: 20px;
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .form__body {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+}
+.form__column {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  flex: 0 1 500px;
+}
+@media (max-width: 767px) {
+  .form__column {
+    align-self: center;
+    flex: 1 0 auto;
+  }
+}
+.form__input {
+  border: 2px solid #DCDCD6;
+  background: #F4F4F3;
+  padding: 25px;
+  max-width: 500px;
+  width: 100%;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 100%; /* 40px */
+}
+.form__input::-moz-placeholder {
+  color: #8E8E8A;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 100%; /* 40px */
+}
+.form__input::placeholder {
+  color: #8E8E8A;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 100%; /* 40px */
+}
+@media (max-width: 1439px) {
+  .form__input {
+    font-size: 36px;
+  }
+}
+@media (max-width: 1023px) {
+  .form__input {
+    font-size: 32px;
+  }
+}
+@media (max-width: 767px) {
+  .form__input {
+    font-size: 28px;
+  }
+}
+@media (max-width: 424px) {
+  .form__input {
+    font-size: 24px;
+    padding: 20px;
+  }
+}
+.form__add-text {
+  color: #484846;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 155%; /* 37.2px */
+  max-width: 500px;
+}
+.form__button {
+  align-self: flex-end;
+  font-size: 48px;
+}
+@media (max-width: 1023px) {
+  .form__button {
+    font-size: 36px;
+  }
+}
+
+.textarea {
+  resize: none;
+  flex: 1 0 auto;
+}
+@media (max-width: 767px) {
+  .textarea {
+    height: 300px;
+  }
+}
