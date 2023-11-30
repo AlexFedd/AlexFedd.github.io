@@ -1,6 +1,5 @@
 const quanities = document.querySelectorAll('.quanity');
 quanities.forEach(el => {
-    console.log(el);
     el.addEventListener('click', e => {
         let counter = el.querySelector('.quanity__counter');
         if(e.target === el.querySelector('.quanity__minus') && Number(counter.innerHTML) > 1) {
