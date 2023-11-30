@@ -1,31 +1,27 @@
-const addToCart = document.querySelector(".product-page__add-to-cart");
-const prodName = document.querySelector(".header__title").innerHTML;
-const price = document.querySelector(".product-page__price").innerHTML;
-addToCart.addEventListener("click", (e) => {
-  const count = document.querySelector(".quanity__counter").innerHTML;
-  let cartData = JSON.parse(decodeURIComponent(localStorage.getItem("cart")));
-  if (cartData == null) {
-    localStorage.setItem(
-      "cart",
-      encodeURIComponent(
-        JSON.stringify({
-          [prodName]: {
-            name: prodName,
-            price: price,
-            count: count,
-          },
-        })
-      )
-    );
-  } else {
-    const newItem = {
-      [prodName]: {
-        name: prodName,
-        price: price,
-        count: count,
-      },
-    };
-    const newCart = {...cartData, ...newItem}
-    localStorage.setItem("cart", encodeURIComponent(JSON.stringify(newCart)));
-  }
-});
+const cartPrice = document.querySelector('.cart-options__total-number')
+const cartContainer = document.querySelector('.cart-items__container');
+
+const cartData = JSON.parse(decodeURIComponent(localStorage.getItem('cart')))
+console.log(cartData);
+
+for (const key in cartData) {
+    cartContainer.innerHTML += 
+    `<article class="cart-items__item cart-item">
+    <div class="cart-item__content">
+        <img src="./image/example.png" alt="" class="cart-item__image">
+        <div class="cart-item__info">
+            <h2 class="cart-item__title">${cartData[key].name}</h2>
+            <span class="cart-item__price">${cartData[key].price}</span>
+        </div>
+    </div>
+    <div class="cart-item__func">
+        <div class="cart-item__quanity quanity">
+            <img src="./image/minus.svg" alt="Минус" class="quanity__minus">
+            <span class="quanity__counter">${cartData[key].count}</span>
+            <img src="./image/plus.svg" alt="Плюс" class="quanity__plus">
+        </div>
+        <img src="./image/close.svg" alt="" class="cart-item__close">
+    </div>
+</article>`;
+cartPrice.innerHTML = Number(cartPrice.innerHTML) + (Number(cartData[key].price.slice(1)) * Number(cartData[key].count))
+}
