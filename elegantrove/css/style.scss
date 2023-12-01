@@ -55,17 +55,20 @@ body {
         font-size: 80px;
     }
     @media (max-width: 767px) {
-        font-size: 10vw;
-        letter-spacing: 0.28em;
+        font-size: 12vw;
+        letter-spacing: 0.1em;
+        
+    }
+    @media (max-width: 424px) {
     }
 }
 .title-h1 {
-    font-size: 76.244px;
+    font-size: 64px;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
     @media (max-width: 1439px) {
-        font-size: 68px;
+        font-size: 58px;
     }
     @media (max-width: 767px) {
         font-size: 48px;
@@ -76,15 +79,15 @@ body {
     
 }
 .title-h2 {
-    font-size: 64px;
+    font-size: 58px;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
     @media (max-width: 1439px) {
-        font-size: 58px;
+        font-size: 48px;
     }
     @media (max-width: 767px) {
-        font-size: 36px;
+        font-size: 32px;
     }
 }
 .title-h3 {
@@ -99,28 +102,41 @@ body {
 }
 .button {
     color: #282827;
-    font-size: 29.124px;
+    font-size: 28px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     text-decoration: underline !important;
+    transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    &:hover {
+      transform: scale(1.1);
+    }
+    @media (max-width: 767px) {
+      font-size: 24px;
+    }
+    @media (max-width: 424px) {
+      font-size: 22px;
+    }
 }
 .text {
-    font-size: 24px;
+    font-size: 22px;
     font-style: normal;
     font-weight: 400;
     line-height: 155%; /* 37.2px */
     @media (max-width: 1439px) {
-        font-size: 22px;
+        font-size: 20px;
     }
     @media (max-width: 767px) {
-        font-size: 20px;
+        font-size: 18px;
     }
 }
 .footer {
     background-color: #DCDCD633;
     border-top: 1px solid #DCDCD6;
     padding: 138px 0;
+    @media (max-width: 1023px) {
+      padding: 10vh 0;
+    }
     &__text {
         text-align: center;
         color:  #111110;
@@ -141,6 +157,12 @@ body {
       display: flex;
       flex-direction: column;
       gap: 65px;
+      @media (max-width: 1023px) {
+        gap: 50px;
+      }
+      @media (max-width: 767px) {
+        gap: 30px;
+      }
     }
   
     &__title {
@@ -209,15 +231,15 @@ body {
   
     &__contacts-item {
       text-align: center;
-      font-size: 32px;
+      font-size: 24px;
       font-style: normal;
       font-weight: 300;
       line-height: normal;
       @media (max-width: 1023px) {
-        font-size: 28px;
+        font-size: 20px;
       }
       @media (max-width: 767px) {
-        font-size: 24px;
+        font-size: 18px;
       }
     }
   }
@@ -249,6 +271,7 @@ body {
       }
     
       &__link {
+        transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
         color: #282827;
         font-size: 32px;
         font-style: normal;
@@ -258,6 +281,9 @@ body {
         display: flex;
         align-items: center;
         gap: 10px;
+        &:hover {
+          transform: scale(1.1);
+        }
       }
     
       &__cart-img {
@@ -329,21 +355,50 @@ body {
     display: flex;
     gap: 20px;
     align-items: center;
+    @media (max-width: 1023px) {
+      gap: 15px;
+    }
     &__minus {
+      transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+      cursor: pointer;
+      &:active {
+        transform: scale(0.9);
+      }
+      @media (hover:hover) {
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+      @media (max-width: 1023px) {
+        width: 30px;
+      }
     }
     &__counter {
-        font-size: 54px;
+        font-size: 40px;
         font-style: normal;
         font-weight: 400;
         line-height: 100%; /* 54px */
         letter-spacing: 2.16px;
         @media (max-width: 767px) {
-          font-size: 36px;
+          font-size: 32px;
         }
         @media (max-width: 424px) {
           font-size: 28px;
         }
     }
     &__plus {
+      transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+      cursor: pointer;
+      &:active {
+        transform: scale(0.9);
+      }
+      @media (hover:hover) {
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+      @media (max-width: 1023px) {
+        width: 30px;
+      }
     }
 }

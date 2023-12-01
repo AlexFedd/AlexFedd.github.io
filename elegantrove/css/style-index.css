@@ -1,6 +1,6 @@
 .header {
   overflow: hidden;
-  height: max(900px, min(100vh, 1200px));
+  height: 900px;
   padding: 55px 0;
   position: relative;
   background-color: rgba(220, 220, 214, 0.2);
@@ -11,11 +11,21 @@
     height: 800px;
   }
 }
+@media (max-width: 424px) {
+  .header {
+    height: 450px;
+  }
+}
 .header__container {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 12vh;
+}
+@media (max-width: 424px) {
+  .header__container {
+    gap: 50px;
+  }
 }
 .header__subtitle {
   color: #111110;
@@ -40,6 +50,11 @@
   position: absolute;
   bottom: -300px;
   min-width: 600px;
+}
+@media (max-width: 767px) {
+  .header__banner {
+    min-width: 400px;
+  }
 }
 
 .our-product__container {

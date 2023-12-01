@@ -1,18 +1,18 @@
 .cart-options__total-cost {
     color: #282827;
-    font-size: 48px;
+    font-size: 40px;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
     text-align: end;
     @media (max-width: 1023px) {
-        font-size: 40px;
-    }
-    @media (max-width: 767px) {
         font-size: 36px;
     }
-    @media (max-width: 424px) {
+    @media (max-width: 767px) {
         font-size: 28px;
+    }
+    @media (max-width: 424px) {
+        font-size: 24px;
     }
 }
 .form {
@@ -23,6 +23,12 @@
         display: flex;
         flex-direction: column;
         gap: 60px;
+        @media (max-width: 1023px) {
+            gap: 40px;
+        }
+        @media (max-width: 767px) {
+            gap: 30px;
+        }
     }
 
     &__title {
@@ -38,7 +44,7 @@
         @media (max-width: 767px) {
             flex-direction: column;
             align-items: center;
-            gap: 40px;
+            gap: 25px;
         }
     }
 
@@ -50,16 +56,18 @@
         @media (max-width: 767px) {
             align-self: center;
             flex: 1 0 auto;
+            width: 100%;
+            gap: 25px;
         }
     }
 
     &__input {
         border: 2px solid #DCDCD6;
         background: #F4F4F3;
-        padding: 25px;
+        padding: 20px;
         max-width: 500px;
         width: 100%;
-        font-size: 40px;
+        font-size: 28px;
         font-style: normal;
         font-weight: 300;
         line-height: 100%; /* 40px */
@@ -70,17 +78,11 @@
             line-height: 100%; /* 40px */
         }
         @media (max-width: 1439px) {
-            font-size: 36px;
-        }
-        @media (max-width: 1023px) {
-            font-size: 32px;
-        }
-        @media (max-width: 767px) {
-            font-size: 28px;
+            font-size: 24px;
         }
         @media (max-width: 424px) {
-            font-size: 24px;
-            padding: 20px;
+            font-size: 20px;
+            padding: 15px;
         }
     }
 
@@ -91,13 +93,22 @@
         font-weight: 300;
         line-height: 155%; /* 37.2px */
         max-width: 500px;
+        @media (max-width: 767px) {
+            font-size: 20px;
+        }
+        @media (max-width: 424px) {
+            font-size: 18px;
+        }
     }
 
     &__button {
         align-self: flex-end;
-        font-size: 48px;
+        font-size: 36px;
         @media (max-width: 1023px) {
-            font-size: 36px;
+            font-size: 32px;
+        }
+        @media (max-width: 767px) {
+            font-size: 28px;
         }
     }
 }
