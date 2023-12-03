@@ -104,10 +104,6 @@
   }
 }
 
-.swiper-wrapper {
-  overflow: hidden;
-}
-
 .sidebar {
   align-self: flex-start;
   display: flex;
