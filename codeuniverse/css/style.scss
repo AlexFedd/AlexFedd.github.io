@@ -1,13 +1,16 @@
 @import './reset.css';
 
 @import './fonts.css';
-
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: 'IBM Plex Mono';
     background-color: #E2F4FC;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+
 }
 
 .main {
