@@ -1,0 +1,137 @@
+.main-header {
+  position: relative;
+  background-image: url("../pictures/photo-2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 40px;
+  padding-bottom: 180px;
+}
+.main-header::before {
+  z-index: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(26, 13, 0, 0.2);
+}
+.main-header::after {
+  z-index: 1;
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: linear-gradient(180deg, rgba(6, 6, 6, 0.72) 13.33%, rgba(217, 217, 217, 0) 100%);
+}
+.main-header .container {
+  position: relative;
+  z-index: 2;
+}
+
+.header-main {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-subtitle {
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-align: center;
+}
+
+
+.header-title {
+  font-size: 96px;
+  font-style: normal;
+  text-align: center;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 4.8px;
+  text-transform: uppercase;
+}
+
+.header-text {
+  margin-top: 40px;
+  max-width: 763px;
+  text-align: center;
+}
+
+.header-link {
+  margin-top: 40px;
+}
+
+.why-we-content {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.why-we-text {
+  max-width: 440px;
+}
+
+.why-we-picture {
+  width: 500px;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 1440px) {
+  .header-subtitle {
+    font-size: 24px;
+  }
+  .header-title {
+    font-size: 76px;
+  }
+}
+@media (max-wdith:1100px) {
+  .header-title {
+    font-size: 64px;
+  }
+  .header-subtitle {
+    font-size: 20px;
+  }
+  .why-we-picture {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 800px) {
+  .header-title {
+    font-size: 48px;
+  }
+  .why-we-content {
+    flex-direction: column;
+  }
+  .why-we-text {
+    text-align: center;
+  }
+  .why-we-picture {
+    width: 80%;
+  }
+}
+
+@media (max-width: 500px) {
+  .main-header {
+    padding-bottom: 100px;
+  }
+  .header-main {
+    margin-top: 0;
+  }
+  .why-we-picture {
+    width: 100%;
+  }
+}

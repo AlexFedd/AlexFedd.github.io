@@ -1,0 +1,92 @@
+.about-us {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.about-us-text {
+  max-width: 539px;
+}
+
+.connect {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.connect-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.connect-column {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+
+.connect-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.connect-right .h3 {
+  text-align: right;
+}
+.connect-right .connect-list {
+  align-items: flex-end;
+}
+
+.connect-list {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.connect-text {
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1100px) {
+  .about-us {
+    flex-direction: column;
+    text-align: center;
+  }
+  .connect-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 70px;
+  }
+  .connect-column {
+    align-items: center;
+    text-align: center;
+  }
+  .connect-right {
+    align-items: center;
+  }
+  .connect-right .connect-list {
+    align-items: center;
+  }
+  .connect-right .h3 {
+    text-align: center;
+  }
+  .connect-text {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 800px) {
+  .connect-text {
+    font-size: 20px;
+  }
+}

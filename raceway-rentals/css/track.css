@@ -1,0 +1,107 @@
+.track-info {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.track-info-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.track-info-item {
+  text-transform: uppercase;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+.track-info-item .yellow {
+  text-transform: lowercase;
+}
+
+.text {
+  text-align: justify;
+}
+
+.slider {
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.swiper-slide {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.arr-left {
+  position: relative;
+  left: 0;
+  transition: all 0.2s ease-in-out;
+}
+.arr-left:hover {
+  left: -5px;
+}
+
+
+.slider-img {
+  height: 558px;
+  width: 90%;
+  border-radius: 0px 90px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.arr-right {
+  position: relative;
+  right: 0;
+  transition: all 0.2s ease-in-out;
+  transform: rotate(180deg);
+}
+.arr-right:hover {
+  right: -5px;
+}
+
+@media (max-width: 1100px) {
+  .track-info-row {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .track-info-item {
+    font-size: 24px;
+  }
+  .slider-img {
+    height: 500px;
+  }
+}
+
+@media (max-width: 800px) {
+  .track-info-item {
+    font-size: 20px;
+  }
+  .slider {
+    gap: 10px;
+  }
+  .arr-left {
+    z-index: 100;
+    margin-right: -55px;
+    width: 20px;
+  }
+  .slider-img {
+    height: 300px;
+    width: 100%;
+    border-radius: 0px 50px;
+  }
+  .arr-right {
+    position: relative;
+    z-index: 100;
+    margin-left: -55px;
+    width: 20px;
+  }
+}
