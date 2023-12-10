@@ -11,16 +11,8 @@ body {
   gap: 60px;
   min-height: 100vh;
 }
-@media (max-width: 1023px) {
-  body {
-    background-size: 70%;
-  }
-}
-@media (max-width: 767px) {
-  body {
-    gap: 40px;
-  }
-}
+
+
 
 .index-header {
   padding: 40px 0 30px;
@@ -29,16 +21,7 @@ body {
 .index-header .container {
   gap: 17vh;
 }
-@media (max-width: 1023px) {
-  .index-header .container {
-    gap: 12vh;
-  }
-}
-@media (max-width: 767px) {
-  .index-header .container {
-    gap: 8vh;
-  }
-}
+
 
 .header {
   padding: 40px 0 0px;
@@ -47,21 +30,7 @@ body {
 .header .container {
   gap: 90px;
 }
-@media (max-width: 1023px) {
-  .header .container {
-    gap: 70px;
-  }
-}
-@media (max-width: 767px) {
-  .header .container {
-    gap: 50px;
-  }
-}
-@media (max-width: 424px) {
-  .header .container {
-    gap: 30px;
-  }
-}
+
 
 .container {
   max-width: 1440px;
@@ -71,24 +40,8 @@ body {
   display: flex;
   flex-direction: column;
 }
-@media (max-width: 1439px) {
-  .container {
-    padding-left: 60px;
-    padding-right: 60px;
-  }
-}
-@media (max-width: 1023px) {
-  .container {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-}
-@media (max-width: 768px) {
-  .container {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-}
+
+
 
 .nav {
   align-self: flex-end;
@@ -104,11 +57,7 @@ body {
 .nav-button:active {
   transform: scale(0.9);
 }
-@media (max-width: 1023px) {
-  .nav-button {
-    display: block;
-  }
-}
+
 
 .fixed {
   position: fixed;
@@ -125,19 +74,6 @@ body {
   gap: 40px;
   align-items: center;
   transition: all 0.3s ease-in-out;
-}
-@media (max-width: 1023px) {
-  .nav-ul {
-    flex-direction: column;
-    position: fixed;
-    z-index: 999;
-    left: -320px;
-    top: 0;
-    bottom: -200px;
-    padding: 50px 20px;
-    width: 320px;
-    background-color: #dfd8be;
-  }
 }
 
 .nav-ul-active {
@@ -165,11 +101,7 @@ body {
   align-items: center;
   gap: 40px;
 }
-@media (max-width: 767px) {
-  .header-content {
-    flex-direction: column;
-  }
-}
+
 
 .header-left {
   display: flex;
@@ -185,16 +117,8 @@ body {
   line-height: normal;
   text-align: center;
 }
-@media (max-width: 1023px) {
-  .header-title {
-    font-size: 64px;
-  }
-}
-@media (max-width: 767px) {
-  .header-title {
-    font-size: 48px;
-  }
-}
+
+
 
 .active {
   text-decoration: underline !important;
@@ -215,11 +139,7 @@ body {
 .header-image {
   width: 403px;
 }
-@media (max-width: 1023px) {
-  .header-image {
-    width: 300px;
-  }
-}
+
 
 .popular-scientists {
   display: flex;
@@ -243,16 +163,8 @@ main .container {
   font-weight: 400;
   line-height: 100%; /* 48px */
 }
-@media (max-width: 1023px) {
-  .h2 {
-    font-size: 36px;
-  }
-}
-@media (max-width: 767px) {
-  .h2 {
-    font-size: 32px;
-  }
-}
+
+
 
 .scientists-items {
   display: flex;
@@ -274,12 +186,7 @@ main .container {
 .scientists-item:hover .scientitsts-image {
   transform: scale(1.2);
 }
-@media (max-width: 1023px) {
-  .scientists-item {
-    width: 300px;
-    height: 391px;
-  }
-}
+
 
 .scientitsts-image {
   transition: all 0.2s ease-in-out;
@@ -313,16 +220,7 @@ main .container {
   font-weight: 400;
   line-height: 100%; /* 32px */
 }
-@media (max-width: 1023px) {
-  .h3 {
-    font-size: 28px;
-  }
-}
-@media (max-width: 767px) {
-  .h3 {
-    font-size: 24px;
-  }
-}
+
 
 .scientists-title {
   text-align: end;
@@ -354,23 +252,7 @@ main .container {
 .science-item:hover .science-image {
   transform: scale(1.2);
 }
-@media (max-width: 1023px) {
-  .science-item {
-    width: 255px;
-    height: 255px;
-  }
-}
-@media (max-width: 767px) {
-  .science-item {
-    width: 180px;
-    height: 205px;
-  }
-}
-@media (max-width: 424px) {
-  .science-item {
-    width: 100%;
-  }
-}
+
 
 .science-image {
   position: relative;
@@ -448,11 +330,7 @@ main .container {
   line-height: 100%; /* 28px */
   border-bottom: 2px solid #373220;
 }
-@media (max-width: 424px) {
-  .search-window {
-    font-size: 24px;
-  }
-}
+
 
 .footer-nav-ul {
   display: flex;
@@ -479,16 +357,7 @@ main .container {
 .footer-nav-li:hover {
   top: -3px;
 }
-@media (max-width: 1023px) {
-  .footer-nav-li {
-    font-size: 28px;
-  }
-}
-@media (max-width: 767px) {
-  .footer-nav-li {
-    font-size: 24px;
-  }
-}
+
 
 .all-rights-reserved {
   color: #000;
@@ -498,16 +367,7 @@ main .container {
   font-weight: 400;
   line-height: 100%; /* 32px */
 }
-@media (max-width: 1023px) {
-  .all-rights-reserved {
-    font-size: 28px;
-  }
-}
-@media (max-width: 767px) {
-  .all-rights-reserved {
-    font-size: 24px;
-  }
-}
+
 
 .article-body {
   margin-bottom: 30px;
@@ -518,11 +378,7 @@ main .container {
 .article-body > p {
   text-align: justify;
 }
-@media (max-width: 767px) {
-  .article-body {
-    flex-direction: column-reverse;
-  }
-}
+
 
 .article-info {
   display: flex;
@@ -535,12 +391,7 @@ main .container {
   box-shadow: 4px 4px 15px 0px rgba(86, 83, 69, 0.33);
   min-width: 320px;
 }
-@media (max-width: 767px) {
-  .article-info {
-    width: 70%;
-    align-self: center;
-  }
-}
+
 
 .article-img {
   align-self: center;
@@ -559,11 +410,7 @@ main .container {
   font-weight: 400;
   line-height: 100%; /* 24px */
 }
-@media (max-width: 1023px) {
-  .article-fact {
-    font-size: 20px;
-  }
-}
+
 
 .fact-text:nth-of-type(2) {
   text-align: end;
@@ -584,17 +431,7 @@ main .container {
   display: flex;
   gap: 30px;
 }
-@media (max-width: 767px) {
-  .post-form {
-    flex-direction: column;
-    width: 80%;
-  }
-}
-@media (max-width: 424px) {
-  .post-form {
-    width: 100%;
-  }
-}
+
 
 .form-column {
   display: flex;
@@ -616,16 +453,7 @@ main .container {
   font-weight: 400;
   line-height: 100%; /* 24px */
 }
-@media (max-width: 1023px) {
-  .textarea {
-    width: 400px;
-  }
-}
-@media (max-width: 767px) {
-  .textarea {
-    width: 100%;
-  }
-}
+
 
 .name {
   width: 305px;
@@ -639,11 +467,7 @@ main .container {
   font-weight: 400;
   line-height: 100%; /* 24px */
 }
-@media (max-width: 767px) {
-  .name {
-    width: 100%;
-  }
-}
+
 
 .form-button {
   padding: 18px;
@@ -688,11 +512,6 @@ main .container {
   max-width: 1064px;
   width: 100%;
 }
-@media (max-width: 767px) {
-  .post {
-    padding: 20px 15px;
-  }
-}
 
 .upper-post {
   display: flex;
@@ -711,17 +530,156 @@ main .container {
   line-height: 100%; /* 24px */
   text-align: end;
 }
-@media (max-width: 1023px) {
+
+
+.post-text {
+  text-align: justify;
+}
+
+@media (max-width: 1450px) {
+  .container {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+@media (max-width: 1050px) {
+  body {
+    background-size: 70%;
+  }
+  .index-header .container {
+    gap: 12vh;
+  }
+  .header .container {
+    gap: 70px;
+  }
+  .container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .nav-button {
+    display: block;
+  }
+  .nav-ul {
+    flex-direction: column;
+    position: fixed;
+    z-index: 999;
+    left: -320px;
+    top: 0;
+    bottom: -200px;
+    padding: 50px 20px;
+    width: 320px;
+    background-color: #dfd8be;
+  }
+  .header-title {
+    font-size: 64px;
+  }
+  .header-image {
+    width: 300px;
+  }
+  .h2 {
+    font-size: 36px;
+  }
+  .scientists-item {
+    width: 300px;
+    height: 391px;
+  }
+  .h3 {
+    font-size: 28px;
+  }
+  .science-item {
+    width: 255px;
+    height: 255px;
+  }
+  .footer-nav-li {
+    font-size: 28px;
+  }
+  .all-rights-reserved {
+    font-size: 28px;
+  }
+  .article-fact {
+    font-size: 20px;
+  }
+  .textarea {
+    width: 400px;
+  }
   .public-date {
     font-size: 20px;
   }
 }
-@media (max-width: 767px) {
+
+@media (max-width: 800px) {
+  body {
+    gap: 40px;
+  }
+  .index-header .container {
+    gap: 8vh;
+  }
+  .header .container {
+    gap: 50px;
+  }
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .header-content {
+    flex-direction: column;
+  }
+  .header-title {
+    font-size: 48px;
+  }
+  .h2 {
+    font-size: 32px;
+  }
+  .h3 {
+    font-size: 24px;
+  }
+  .science-item {
+    width: 180px;
+    height: 205px;
+  }
+  .footer-nav-li {
+    font-size: 24px;
+  }
+  .all-rights-reserved {
+    font-size: 24px;
+  }
+  .article-body {
+    flex-direction: column-reverse;
+  }
+  .article-info {
+    width: 70%;
+    align-self: center;
+  }
+  .post-form {
+    flex-direction: column;
+    width: 80%;
+  }
+  .textarea {
+    width: 100%;
+  }
+  .name {
+    width: 100%;
+  }
+  .post {
+    padding: 20px 15px;
+  }
   .public-date {
     font-size: 18px;
   }
 }
 
-.post-text {
-  text-align: justify;
+@media (max-width: 450px) {
+  .header .container {
+    gap: 30px;
+  }
+  .science-item {
+    width: 100%;
+  }
+  .search-window {
+    font-size: 24px;
+  }
+  .post-form {
+    width: 100%;
+  }
 }
