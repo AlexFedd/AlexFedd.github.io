@@ -1,0 +1,30 @@
+.about-us {
+    text-align: center;
+    margin-top: 7rem;
+    &__container {
+    }
+
+    &__text {
+        margin-top: 0.75rem;
+    }
+
+    &__items {
+        margin-top: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    &__item {
+        flex: 1 1;
+
+    }
+
+    &__image {
+    }
+
+    &__item-title {
+        margin-top: 1.5rem;
+    }
+}

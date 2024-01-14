@@ -1,0 +1,45 @@
+.bestsellers {
+    margin-top: 6.0625rem;
+    &__container {
+        display: flex;
+        gap: 1rem;
+    }
+
+    &__text {
+        margin-top: 0.75rem;
+        max-width: 12.25rem;
+    }
+
+    &__link {
+        margin-top: 1.5rem;
+    }
+
+    &__items {
+        display: flex;
+        gap: 2rem;
+    }
+
+    &__item {
+        flex: 1 1;
+    }
+
+    &__title {
+        margin-top: 0.75rem;
+        font-weight: 500;
+    }
+
+    &__image-wrapper {
+        width: 100%;
+        max-width: 18.75rem;
+        height: 22.6875rem;
+        border-radius: 12px;
+    }
+
+    &__price {
+        margin-top: 0.4375rem;
+        color: rgba(30, 30, 30, 0.50);
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 500;
+    }
+}

@@ -1,0 +1,117 @@
+.banner {
+
+    &__wrapper {
+        background-color: #C1DCDC;
+        padding: 3rem 3.5rem 10.3125rem 3rem;
+        display: flex;
+        border-radius: 24px;
+        position: relative;
+    }
+
+    &__content {
+        position: relative;
+        z-index: 1;
+    }
+
+    &__main-info {
+        margin-top: 1.5rem;
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    &__info-title {
+        color: #1E1E1E;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 500;
+
+    }
+
+    &__info-text {
+        color: #1E1E1E;
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 500;
+    }
+
+    &__separate-line {
+        height: 4rem;
+        width: 1px;
+        background: #1E1E1E;
+    }
+
+    &__search {
+        max-width: 28.0625rem;
+        width: 100%;
+        margin-top: 3rem;
+        border-radius: 12px;
+        background: #FFF;
+        display: flex;
+        padding: 0.5rem;
+    }
+
+    &__search-input {
+        padding: 0.625rem;
+        flex: 1 1 auto;
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 500;
+        color: #1E1E1E;
+        &::placeholder {
+            color: rgba(30, 30, 30, 0.50);
+
+        }
+    }
+
+    &__search-button {
+        align-self: center;
+        display: flex;
+        padding: 0.875rem;
+        border-radius: 12px;
+        background-color: #C1DCDC;
+
+    }
+
+    &__search-button-image {
+        width: 1.25rem;
+        height: 1.25rem;
+    }
+
+    &__main-photo {
+        position: absolute;
+        bottom: 0;
+        right: 3.5rem;
+        &::after {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            z-index: 0;
+            content: '';
+            width: 450px;
+            height: 400px;
+            border-radius: 200px 200px 0px 200px;
+            background:  #1E1E1E;
+        }
+    }
+
+
+    &__upper-arrow {
+        position: absolute;
+        top: 0;
+        right: -2rem;
+    }
+
+    &__down-arrow {
+        position: absolute;
+        z-index: 0;
+        bottom: 6rem;
+        left: calc(50% - 169px / 0.37);
+
+    }
+
+    &__image-wrapper {
+        position: relative;
+        z-index: 1;
+    }
+}

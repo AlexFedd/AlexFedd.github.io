@@ -1,0 +1,39 @@
+.navigation {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    &__link {
+        color:  rgba(30, 30, 30, 0.50);
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 500;
+         
+        &:hover,
+        &--active {
+            color: #1E1E1E;
+        }
+    }
+
+    &__profile-list {
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    &__profile-list-image {
+        width: 1.5rem;
+    }
+
+    &__separate-line {
+        background: #1E1E1E;
+        width: 1px;
+        height: 1.5rem;
+    }
+}
