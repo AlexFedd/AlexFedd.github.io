@@ -1,38 +1,58 @@
 .footer {
-
-    &__container {
-    }
-
+    background-color: #C1DCDC;
+    padding: 3rem 0;
+    margin-top: 14.375rem;
     &__content {
+        display: flex;
+        justify-content: space-between;
     }
 
     &__left-content {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        max-width: 11.8125rem;
+
     }
 
     &__logo {
+        font-size: 1.125rem;
     }
 
-    &__text {
-    }
+
 
     &__social-media {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
     &__social-media-item {
-    }
-
-    &__right-content {
+        padding: 0.875rem;
+        border-radius: 50%;
+        border: 1px solid rgba(30, 30, 30, 0.50);
     }
 
     &__items {
-    }
-
-    &__item {
+        display: flex;
+        gap: 3rem;
     }
 
     &__list {
+        margin-top: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
     }
 
     &__link {
+        color:  rgba(30, 30, 30, 0.50);
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 400;
+    }
+    &__policy-privacy {
+        display: inline-block;
+        margin-top: 6.0625rem;
     }
 }

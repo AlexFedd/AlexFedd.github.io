@@ -1,8 +1,7 @@
 .about-us {
     text-align: center;
     margin-top: 7rem;
-    &__container {
-    }
+
 
     &__text {
         margin-top: 0.75rem;
@@ -22,6 +21,7 @@
     }
 
     &__image {
+        width: 6rem;
     }
 
     &__item-title {
