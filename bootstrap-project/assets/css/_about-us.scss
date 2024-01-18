@@ -2,7 +2,9 @@
     text-align: center;
     margin-top: 7rem;
 
-
+    @media (max-width: 1023px) {
+        margin-top: 4rem;
+    }
     &__text {
         margin-top: 0.75rem;
     }
@@ -11,8 +13,10 @@
         margin-top: 3rem;
         display: flex;
         justify-content: center;
-        align-items: center;
         gap: 1.5rem;
+        @media (max-width: 767px) {
+            flex-direction: column;
+        }
     }
 
     &__item {
@@ -26,5 +30,8 @@
 
     &__item-title {
         margin-top: 1.5rem;
+        @media (max-width: 767px) {
+            margin-top: 1rem;
+        }
     }
 }

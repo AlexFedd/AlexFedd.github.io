@@ -3,10 +3,39 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media (max-width: 1023px) {
+        width: auto;
+    }
+    &__close-btn {
+        display: none;
+        cursor: pointer;
+        position: absolute;
+        z-index: 1001;
+        top: 1.5rem;
+        right: 1.5rem;
+        @media (max-width: 1023px) {
+            display: block;
+        }
+    }
     &__list {
         display: flex;
         align-items: center;
         gap: 3rem;
+        transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+        @media (max-width: 1023px) {
+            position: fixed;
+            z-index: 999;
+            background-color: #FFFFFF;
+            top: 0;
+            bottom: -100px;
+            right: -320px;
+            width: 320px;
+            flex-direction: column;
+            padding-top: 4rem;
+        }
+        &--opened {
+            right: 0;
+        }
     }
 
     &__link {
@@ -14,10 +43,14 @@
         font-size: 1.125rem;
         font-style: normal;
         font-weight: 500;
-         
-        &:hover,
+        transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
         &--active {
             color: #1E1E1E;
+        }
+        @media (hover:hover) {
+            &:hover {
+                color: #1E1E1E;
+            }
         }
     }
 
@@ -25,15 +58,42 @@
         display: flex;
         align-items: center;
         gap: 3rem;
+        @media (max-width: 767px) {
+            gap: 1.5rem;
+        }
     }
 
     &__profile-list-image {
         width: 1.5rem;
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+        &:active {
+            transform: scale(1.1);
+        }
+        @media (hover:hover) {
+            &:hover {
+                transform: scale(1.15);
+            }
+        }
     }
 
     &__separate-line {
         background: #1E1E1E;
         width: 1px;
         height: 1.5rem;
+        @media (min-width: 1024px) {
+            display: none;
+        }
+    }
+    &__nav-button {
+        @media (min-width: 1024px) {
+            display: none;
+        }
     }
 }

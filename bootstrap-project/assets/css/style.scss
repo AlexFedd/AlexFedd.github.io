@@ -29,6 +29,9 @@ body {
     font-family: Quella;
     font-size: 1.5rem;
     color: #1E1E1E;
+    @media (max-width: 767px) {
+        font-size: 1.25rem;
+    }
 }
 
 .main {
@@ -43,7 +46,13 @@ body {
     font-size: 4rem;
     font-style: normal;
     font-weight: 800;
-    line-height: 100%
+    line-height: 100%;
+    @media (max-width: 1439px) {
+        font-size: 3.35rem;
+    }
+    @media (max-width: 1023px) {
+        font-size: 2rem;
+    }
 }
 .image-wrapper {
     overflow: hidden;
@@ -63,12 +72,18 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    @media (max-width: 1023px) {
+        font-size: 1.5rem;
+    }
 }
 .text {
     color:  rgba(30, 30, 30, 0.50);
     font-size: 1.125rem;
     font-weight: 500;
     line-height: normal;
+    @media (max-width: 1023px) {
+        font-size: 1rem;
+    }
 }
 .link {
     border-radius: 8px;
@@ -82,7 +97,24 @@ body {
     font-style: normal;
     font-weight: 500;
     background-color: #C1DCDC;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    @media (max-width: 1023px) {
+        font-size: 1rem;
+    }
+    @media (hover: hover) {
+        &:hover &__arrow {
+            right: -3px;
+        }
+    }
     &__arrow {
+        position: relative;
+        right: 0;
+        transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
         width: 1.5rem;
     }
 }
@@ -92,6 +124,9 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    @media (max-width: 1023px) {
+        font-size: 1rem;
+    }
 }
 
 

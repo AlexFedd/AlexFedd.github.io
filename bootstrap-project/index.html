@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/swiper@11.0.5/swiper-bundle.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Document</title>
 </head>
@@ -12,6 +13,7 @@
             <span class="logo">GREENMIND</span>
             <nav class="navigation">
                 <ul class="navigation__list">
+                    <img src="./assets/image/close-btn.svg" class="navigation__close-btn">
                     <li><a href="#" class="navigation__link navigation__link--active">Home</a></li>
                     <li><a href="#" class="navigation__link">Products</a></li>
                     <li><a href="#" class="navigation__link">Contacts</a></li>
@@ -23,10 +25,9 @@
                     <li>
                         <img src="./assets/image/navigation_account.svg" alt="" class="navigation__profile-list-image">
                     </li>
-                    <li>
-                        <div class="navigation__separate-line"></div>
+                    <li class="navigation__separate-line">
                     </li>
-                    <li>
+                    <li class="navigation__nav-button">
                         <img src="./assets/image/navigation_filter.svg" alt="" class="navigation__profile-list-image">
                     </li>
                 </ul>
@@ -78,27 +79,27 @@
                     </a>
                 </div>
                 <div class="bestsellers__items">
-                    <article class="bestsellers__item">
+                    <a href="#" class="bestsellers__item">
                         <div class="bestsellers__image-wrapper image-wrapper">
                             <img src="./assets/image/products_1.jpg" alt="" class="image-wrapper__image">
                         </div>
                         <h3 class="title-h3 bestsellers__title">Natural Plants</h3>
                         <p class="bestsellers__price">₱ 1,400.00</p>
-                    </article>
-                    <article class="bestsellers__item">
+                    </a>
+                    <a href="#" class="bestsellers__item">
                         <div class="bestsellers__image-wrapper image-wrapper">
                             <img src="./assets/image/products_2.jpg" alt="" class="image-wrapper__image">
                         </div>
                         <h3 class="title-h3 bestsellers__title">Artificial Plants</h3>
                         <p class="bestsellers__price">₱ 900.00</p>
-                    </article>
-                    <article class="bestsellers__item">
+                    </a>
+                    <a href="#" class="bestsellers__item">
                         <div class="bestsellers__image-wrapper image-wrapper">
                             <img src="./assets/image/products_3.jpg" alt="" class="image-wrapper__image">
                         </div>
                         <h3 class="title-h3 bestsellers__title">Artificial Plants</h3>
                         <p class="bestsellers__price">₱ 3,500.00</p>
-                    </article>
+                    </a>
                 </div>
             </div>
         </section>
@@ -162,10 +163,11 @@
         </section>
         <section class="reviews">
             <div class="container reviews__container">
-                <div class="reviews__upper">
+                <div class="reviews__upper swiper">
                     <h2 class="title-h2 reviews__main-title">What customers say about GREEMIND?</h2>
-                    <div class="reviews__items">
-                        <article class="reviews__item">
+                    <div class="swiper-pagination"></div>
+                    <div class="reviews__items swiper-wrapper">
+                        <article class="reviews__item swiper-slide">
                             <p class="text">Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
                             <div class="reviews__lower">
                                 <div class="reviews__profile-info">
@@ -183,7 +185,7 @@
                                 </div>
                             </div>
                         </article>
-                        <article class="reviews__item">
+                        <article class="reviews__item swiper-slide">
                             <p class="text">Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
                             <div class="reviews__lower">
                                 <div class="reviews__profile-info">
@@ -201,7 +203,7 @@
                                 </div>
                             </div>
                         </article>
-                        <article class="reviews__item">
+                        <article class="reviews__item swiper-slide">
                             <p class="text">Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
                             <div class="reviews__lower">
                                 <div class="reviews__profile-info">
@@ -266,5 +268,7 @@
             <a href="#" class="footer__policy-privacy text">2023 all Right Reserved Term of use GREENMIND</a>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11.0.5/swiper-bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
 </body>
 </html>

@@ -1,28 +1,72 @@
 .bestsellers {
     margin-top: 6.0625rem;
+    @media (max-width: 767px) {
+        margin-top: 3rem;
+    }
     &__container {
         display: flex;
         gap: 1rem;
+        justify-content: space-between;
+        @media (max-width: 767px) {
+            flex-direction: column;
+            align-items: center;
+            gap: 3rem;
+        }
     }
 
     &__text {
         margin-top: 0.75rem;
         max-width: 12.25rem;
+        @media (max-width: 767px) {
+            text-align: center;
+        }
     }
 
     &__link {
         margin-top: 1.5rem;
     }
-
+    &__info {
+        @media (max-width: 767px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
     &__items {
         display: flex;
         gap: 2rem;
+        @media (max-width: 424px) {
+            flex-direction: column;
+        }
     }
 
     &__item {
         flex: 1 1;
+        -webkit-tap-highlight-color: transparent;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        @media (hover:hover) {
+            &:hover {
+                .bestsellers__title {
+                    font-size: 1.25rem;
+                }
+                .bestsellers__image-wrapper img {
+                    transform: scale(1.2);
+                }
+                .bestsellers__price {
+                    font-size: 1rem;
+                }
+            }
+        }
     }
-
+    &__price,
+    &__title,
+    &__image-wrapper img {
+        transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
     &__title {
         margin-top: 0.75rem;
         font-weight: 500;
@@ -33,6 +77,9 @@
         max-width: 18.75rem;
         height: 22.6875rem;
         border-radius: 12px;
+        @media (max-width: 1023px) {
+            height: 15rem;
+        }
     }
 
     &__price {
@@ -41,5 +88,8 @@
         font-size: 1.125rem;
         font-style: normal;
         font-weight: 500;
+        @media (max-width: 1023px) {
+            font-size: 1rem;
+        }
     }
 }

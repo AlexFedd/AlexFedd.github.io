@@ -1,37 +1,66 @@
 .reviews {
     margin-top: 6rem;
+    @media (max-width: 1023px) {
+        margin-top: 4rem;
+    }
     &__container {
     }
 
     &__upper {
-
+        overflow: visible !important;
     }
-
+    .swiper-pagination {
+        right: 0;
+        top: 0.75rem;
+        width: auto;
+        bottom: unset;
+        left: unset;
+        @media (max-width: 424px) {
+            top: -1.5rem;
+        }
+    }
+    .swiper-pagination-bullet {
+        border-radius: 12px;
+        background: #D9D9D9;
+        width: 12px;
+        height: 6px;
+        opacity: 1;
+        transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+    .swiper-pagination-bullet-active {
+        width: 48px;
+        background-color: #C1DCDC;
+    }
     &__main-title {
         max-width: 28.5625rem;
     }
 
     &__items {
         margin-top: 3rem;
-        display: flex;
-        gap: 3rem;
+        @media (max-width: 424px) {
+            margin-top: 2rem;
+        }
     }
 
     &__item {
         border-radius: 12px;
         background-color: #C1DCDC;
         padding: 3rem 3rem 0;
-        min-width: 50rem;
-
+        height: 100%;
+        @media (max-width: 424px) {
+            padding: 1rem 1rem;
+        }
     }
 
     &__lower {
         display: flex;
         justify-content: space-between;
+        @media (max-width: 424px) {
+            flex-direction: column-reverse;
+        }
     }
 
     &__profile-info {
-
         display: flex;
         gap: 0.4375rem;
     }
@@ -39,6 +68,7 @@
     &__profile-image {
         position: relative;
         width: 9.375rem;
+        height: 15.9375rem;
         &::before {
             position: absolute;
             z-index: 0;
@@ -54,6 +84,9 @@
 
     &__profile-title {
         margin-top: 3.375rem;
+        @media (max-width: 424px) {
+            margin-top: 1rem;
+        }
     }
 
     &__profile-subtitle {

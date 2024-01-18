@@ -2,9 +2,21 @@
     background-color: #C1DCDC;
     padding: 3rem 0;
     margin-top: 14.375rem;
+    @media (max-width: 1023px) {
+        margin-top: 8rem;
+    }
+    @media (max-width: 767px) {
+        margin-top: 5rem;
+    }
     &__content {
         display: flex;
         justify-content: space-between;
+        @media (max-width: 767px) {
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+        }
+
     }
 
     &__left-content {
@@ -12,7 +24,10 @@
         flex-direction: column;
         gap: 1.5rem;
         max-width: 11.8125rem;
-
+        @media (max-width: 767px) {
+            align-items: center;
+            text-align: center;
+        }
     }
 
     &__logo {
@@ -25,17 +40,40 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @media (max-width: 767px) {
+            gap: 1rem;
+        }
+    }
+    &__social-media a {
+        -webkit-tap-highlight-color: transparent;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
     }
 
     &__social-media-item {
         padding: 0.875rem;
         border-radius: 50%;
         border: 1px solid rgba(30, 30, 30, 0.50);
+        transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+        @media (hover: hover) {
+            &:hover {
+                border: 1px solid rgb(0, 0, 0);
+
+            }
+        }
     }
 
     &__items {
         display: flex;
         gap: 3rem;
+        @media (max-width: 424px) {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
     }
 
     &__list {
@@ -43,6 +81,9 @@
         display: flex;
         flex-direction: column;
         gap: 1.5rem;
+        @media (max-width: 424px) {
+            align-items: center;
+        }
     }
 
     &__link {
@@ -50,9 +91,30 @@
         font-size: 1.125rem;
         font-style: normal;
         font-weight: 400;
+        transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+        -webkit-tap-highlight-color: transparent;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        @media (hover: hover) {
+            &:hover {
+                color: #000000;
+            }
+            
+        }
+        @media (max-width: 1023px) {
+            font-size: 1rem;
+        }
     }
     &__policy-privacy {
         display: inline-block;
         margin-top: 6.0625rem;
+        @media (max-width: 767px) {
+            margin-top: 3rem;
+            width: 100%;
+            text-align: center;
+        }
     }
 }
