@@ -18,12 +18,14 @@ function App() {
 
   useEffect(() => {
     const loadFromLocalStorage = () => {
-      setTodoList(JSON.parse(localStorage.getItem("todoList")));
+      if (localStorage.getItem('todoList')) {
+        setTodoList(JSON.parse(localStorage.getItem("todoList")));
+      }
     };
     loadFromLocalStorage();
   }, []);
-  const updateLocalStorage = () => {
-    localStorage.setItem("todoList", JSON.stringify(todoList));
+  const updateLocalStorage = (updatedTodoList) => {
+    localStorage.setItem("todoList", JSON.stringify(updatedTodoList));
   };
 
   // Function to open a modal window by clicking on a task
@@ -48,7 +50,7 @@ function App() {
     const newTodoList = todoList;
     newTodoList[currentItemId].title = event.target.value;
     setTodoList(newTodoList);
-    updateLocalStorage();
+    updateLocalStorage(newTodoList);
     setDidUpdate(!didUpdate);
   };
 
@@ -57,7 +59,7 @@ function App() {
     const newTodoList = todoList;
     newTodoList[currentItemId].description = event.target.value;
     setTodoList(newTodoList);
-    updateLocalStorage();
+    updateLocalStorage(newTodoList);
     setDidUpdate(!didUpdate);
   };
 
@@ -78,7 +80,7 @@ function App() {
       setTodoList([...todoList, newItem]);
       setTaskInput("");
       event.target.closest("form").reset();
-      updateLocalStorage();
+      updateLocalStorage([...todoList, newItem]);
     }
   };
 
@@ -92,15 +94,16 @@ function App() {
     newTodoList[currentItem].isCompleted =
       !newTodoList[currentItem].isCompleted;
     setTodoList(newTodoList);
-    updateLocalStorage();
+    updateLocalStorage(newTodoList);
     setDidUpdate(!didUpdate);
   };
 
   // Function that handle button click to delete a task
   const handleDelete = () => {
     setTodoList(todoList.toSpliced(currentItemId, 1));
-    updateLocalStorage();
+    setDidUpdate(!didUpdate);
     setIsModalOpen(!isModalOpen);
+    updateLocalStorage(todoList.toSpliced(currentItemId, 1));
   };
 
   return (
