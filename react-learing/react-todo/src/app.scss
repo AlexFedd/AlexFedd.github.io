@@ -23,13 +23,14 @@
     left: 0;
     right: 0;
     bottom: 0;
+    background-color: #00000098;
   &__wrapper {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 12px;
-    background: #1D192B;
+    background: #1d1b20;
     max-width: 501px;
     width: 100%;
     padding: 24px 24px 30px;
