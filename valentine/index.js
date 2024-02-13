@@ -27,5 +27,5 @@ console.log(yesBtn);
 yesBtn.addEventListener("click", (e) => {
   console.log('gdfhgdgfhdfgh');
   fScreen.style.display = "none";
-  sScreen.style.display = "block";
+  sScreen.style.display = "flex";
 });
